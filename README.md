@@ -10,26 +10,25 @@ The Mist browser is the tool of choice to browse and use Ðapps.
 
 For the Mist API see [MISTAPI.md](MISTAPI.md).
 
-This repository is also the Electron host for the [Meteor-based wallet dapp](https://github.com/ethereum/meteor-dapp-wallet).
 
 ## Help and troubleshooting
 
-In order to get help regarding Mist or Ethereum Wallet:
+In order to get help regarding Mist or Won Wallet:
 
-1.  Please check the [Mist troubleshooting guide](https://github.com/ethereum/mist/wiki).
-1.  Go to our [Gitter channel](https://gitter.im/ethereum/mist) to connect with the community for instant help.
-1.  Search for [similar issues](https://github.com/ethereum/mist/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Canonical%22) and potential help.
-1.  Or create a [new issue](https://github.com/ethereum/mist/issues) and provide as much information as you can to recreate your problem.
+1.  Please check the [Mist troubleshooting guide](https://github.com/WONDevelopment/won-mist/wiki).
+1.  Go to our [Gitter channel](https://gitter.im/WONDevelopment/won-mist) to connect with the community for instant help.
+1.  Search for [similar issues](https://github.com/WONDevelopment/won-mist/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Canonical%22) and potential help.
+1.  Or create a [new issue](https://github.com/WONDevelopment/won-mist/issues) and provide as much information as you can to recreate your problem.
 
 ## How to contribute
 
 Contributions via Pull Requests are welcome. You can see where to help looking for issues with the [Enhancement](https://github.com/ethereum/mist/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Enhancement%22) or [Bug](https://github.com/ethereum/mist/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Bug%22) labels. We can help guide you towards the solution.
 
-You can also help by [responding to issues](https://github.com/ethereum/mist/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Triage%22). Sign up on [CodeTriage](https://www.codetriage.com/ethereum/mist) and it'll send you gentle notifications with a configurable frequency. It is a nice way to help while learning.
+You can also help by [responding to issues](https://github.com/WONDevelopment/won-mist/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Triage%22). Sign up on [CodeTriage](https://www.codetriage.com/ethereum/mist) and it'll send you gentle notifications with a configurable frequency. It is a nice way to help while learning.
 
 ## Installation
 
-If you want to install the app from a pre-built version on the [release page](https://github.com/ethereum/mist/releases), you can simply run the executable after download.
+If you want to install the app from a pre-built version on the [release page](https://github.com/WONDevelopment/won-mist/releases), you can simply run the executable after download.
 
 For updating, simply download the new version and copy it over the old one (keep a backup of the old one if you want to be sure).
 
@@ -59,7 +58,7 @@ Once a Mist version is released the Meteor frontend part is bundled using the `m
 
 To run mist in development you need:
 
-- [Node.js](https://nodejs.org) `v7.x` (use the preferred installation method for your OS)
+- [Node.js](https://nodejs.org) `v8.x` (use the preferred installation method for your OS)
 - [Meteor](https://www.meteor.com/install) javascript app framework
 - [Yarn](https://yarnpkg.com/) package manager
 
@@ -75,9 +74,8 @@ $ curl -o- -L https://yarnpkg.com/install.sh | bash
 Now you're ready to initialize Mist for development:
 
 ```bash
-$ git clone https://github.com/ethereum/mist.git
+$ git clone https://github.com/WONDevelopment/won-mist.git
 $ cd mist
-$ git submodule update --init --recursive
 $ yarn
 ```
 
@@ -98,7 +96,7 @@ $ cd mist
 $ yarn dev:electron
 ```
 
-_NOTE: Client binaries (e.g. [geth](https://github.com/ethereum/go-ethereum)) specified in [clientBinaries.json](https://github.com/ethereum/mist/blob/master/clientBinaries.json) will be checked during every startup and downloaded if out-of-date, binaries are stored in the [config folder](#config-folder)._
+_NOTE: Client binaries (e.g. [gwon](https://github.com/WONDevelopment/go-won)) specified in [clientBinaries.json](https://github.com/WONDevelopment/won-mist/blob/master/clientBinaries.json) will be checked during every startup and downloaded if out-of-date, binaries are stored in the [config folder](#config-folder)._
 
 _NOTE: use `--help` to display available options, e.g. `--loglevel debug` (or `trace`) for verbose output_
 
@@ -128,12 +126,12 @@ $ yarn dev:electron --mode wallet
 This is useful if you are already running your own node or would like to connect with a private or development network.
 
 ```bash
-$ yarn dev:electron --rpc path/to/geth.ipc
+$ yarn dev:electron --rpc path/to/gwon.ipc
 ```
 
-### Passing options to Geth
+### Passing options to Gwon
 
-You can pass command-line options directly to Geth by prefixing them with `--node-` in
+You can pass command-line options directly to Gwon by prefixing them with `--node-` in
 the command-line invocation:
 
 ```bash
@@ -144,7 +142,7 @@ The `--rpc` Mist option is a special case. If you set this to an IPC socket file
 path then the `--ipcpath` option automatically gets set, i.e.:
 
 ```bash
-$ yarn dev:electron --rpc path/to/geth.ipc
+$ yarn dev:electron --rpc path/to/gwon.ipc
 ```
 
 ...is the same as doing...
@@ -158,13 +156,13 @@ $ yarn dev:electron --rpc /my/geth.ipc --node-ipcpath /path/to/geth.ipc
 If you would like to quickly set up a local private network on your computer, run:
 
 ```bash
-geth --dev
+gwon --dev
 ```
 
 Look for the IPC path in the resulting geth output, then start Mist with:
 
 ```bash
-$ yarn dev:electron --rpc path/to/geth.ipc
+$ yarn dev:electron --rpc path/to/gwon.ipc
 ```
 
 ### Deployment
@@ -175,6 +173,14 @@ Our build system relies on [gulp](http://gulpjs.com/) and [electron-builder](htt
 
 Cross-platform builds require [additional dependencies](https://www.electron.build/multi-platform-build) needed by Electron Builder. Please follow their instructions for up to date dependency information.
 
+#### Re-build static files
+
+To generate the static files for Meteor frontend:
+
+```bash
+$ yarn build:dapp
+```
+
 #### Generate packages
 
 To generate the binaries for Mist run:
@@ -183,7 +189,7 @@ To generate the binaries for Mist run:
 $ yarn build:mist
 ```
 
-To generate the Ethereum Wallet:
+To generate the Won Wallet:
 
 ```bash
 $ yarn build:wallet
