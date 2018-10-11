@@ -383,15 +383,14 @@ class EthereumNode extends EventEmitter {
       payload: { syncMode }
     });
 
-    // const client = ClientBinaryManager.getClient(nodeType);
-    let binPath =
-      '/Users/guoyunzhi/go/src/github.com/worldopennetwork/go-won/build/bin/gwon';
+    const client = ClientBinaryManager.getClient(nodeType);
+    let binPath;
 
-    // if (client) {
-    //   binPath = client.binPath;
-    // } else {
-    //   throw new Error(`Node "${nodeType}" binPath is not available.`);
-    // }
+    if (client) {
+      binPath = client.binPath;
+    } else {
+      throw new Error(`Node "${nodeType}" binPath is not available.`);
+    }
 
     ethereumNodeLog.info(`Start node using ${binPath}`);
 
