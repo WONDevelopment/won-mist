@@ -25,7 +25,7 @@ const check = (exports.check = () => {
       break;
   }
 
-  return got('https://api.github.com/repos/won/mist/releases/latest', {
+  return got('https://api.github.com/repos/WONDevelopment/won-mist/releases/latest', {
     timeout: 30000,
     json: true
   })
