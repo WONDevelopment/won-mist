@@ -1,14 +1,14 @@
 export const InfuraEndpoints = {
   ethereum: {
     http: {
-      Main: 'https://mainnet.infura.io/mist',
+      Main: 'https://bc.1won.com',
       Ropsten: 'https://ropsten.infura.io/mist',
       Rinkeby: 'https://rinkeby.infura.io/mist',
       Kovan: 'https://kovan.infura.io/mist'
     },
     websockets: {
-      Main: 'ws://127.0.0.1:8881',
-      // Main: 'wss://bc.1won.com',
+      // Main: 'ws://127.0.0.1:8546',
+      Main: 'wss://bc.1won.com/ws',
       // Main: 'wss://mainnet.infura.io/ws/mist',
       Ropsten: 'wss://ropsten.infura.io/ws/mist',
       Rinkeby: 'wss://rinkeby.infura.io/ws/mist',
