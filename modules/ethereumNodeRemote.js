@@ -192,12 +192,8 @@ class EthereumNodeRemote extends EventEmitter {
         return InfuraEndpoints.ethereum.websockets.Main;
       case 'test':
       // fall-through (uses Ropsten)
-      case 'ropsten':
-        return InfuraEndpoints.ethereum.websockets.Ropsten;
       case 'rinkeby':
         return InfuraEndpoints.ethereum.websockets.Rinkeby;
-      case 'kovan':
-        return InfuraEndpoints.ethereum.websockets.Kovan;
       default:
         ethereumNodeRemoteLog.error(`Unsupported network type: ${network}`);
         return null;

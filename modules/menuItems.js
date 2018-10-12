@@ -519,8 +519,8 @@ let menuTempl = function(webviews) {
   if (process.platform === 'darwin' || process.platform === 'win32') {
     const nodeSubmenu = [];
 
-    const ethClient = ClientBinaryManager.getClient('eth');
-    const gethClient = ClientBinaryManager.getClient('geth');
+    const ethClient = ClientBinaryManager.getClient('won');
+    const gethClient = ClientBinaryManager.getClient('gwon');
 
     if (gethClient) {
       nodeSubmenu.push({
@@ -568,18 +568,8 @@ let menuTempl = function(webviews) {
         }
       },
       {
-        label: 'Ropsten - Test network',
+        label: 'Test network',
         accelerator: 'CommandOrControl+Alt+2',
-        checked: store.getState().nodes.network === 'ropsten',
-        enabled: store.getState().nodes.network !== 'private',
-        type: 'checkbox',
-        click() {
-          changeNodeNetwork('ropsten', webviews);
-        }
-      },
-      {
-        label: 'Rinkeby - Test network',
-        accelerator: 'CommandOrControl+Alt+3',
         checked: store.getState().nodes.network === 'rinkeby',
         enabled: store.getState().nodes.network !== 'private',
         type: 'checkbox',

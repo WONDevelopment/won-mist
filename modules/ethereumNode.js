@@ -445,27 +445,11 @@ class EthereumNode extends EventEmitter {
 
       switch (network) {
         // Starts Ropsten network
-        case 'ropsten':
+        case 'rinkeby':
         // fall through
         case 'test':
           args = [
             '--testnet',
-            '--cache',
-            process.arch === 'x64' ? '1024' : '512',
-            '--ipcpath',
-            Settings.rpcIpcPath
-          ];
-          if (syncMode === 'nosync') {
-            args.push('--nodiscover', '--maxpeers=0');
-          } else {
-            args.push('--syncmode', syncMode);
-          }
-          break;
-
-        // Starts Rinkeby network
-        case 'rinkeby':
-          args = [
-            '--rinkeby',
             '--cache',
             process.arch === 'x64' ? '1024' : '512',
             '--ipcpath',
@@ -712,10 +696,6 @@ class EthereumNode extends EventEmitter {
         return 'main';
       case '0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177':
         return 'rinkeby';
-      case '0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d':
-        return 'ropsten';
-      case '0xa3c565fc15c7478862d50ccd6561e3c06b24cc509bf388941c25ea985ce32cb9':
-        return 'kovan';
       default:
         return 'private';
     }
