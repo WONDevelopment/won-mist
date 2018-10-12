@@ -1,4 +1,4 @@
-# Mist Browser<sup>beta</sup>
+# Won Mist Browser<sup>beta</sup>
 
 [![Github All Releases](https://img.shields.io/github/downloads/ethereum/mist/total.svg)](http://www.somsubhra.com/github-release-stats/?username=ethereum&repository=mist)
 [![Build Status develop branch](https://travis-ci.org/ethereum/mist.svg?branch=develop)](https://travis-ci.org/ethereum/mist)
@@ -6,14 +6,14 @@
 [![Join the chat at https://gitter.im/ethereum/mist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethereum/mist)
 [![Code Triagers Badge](https://www.codetriage.com/ethereum/mist/badges/users.svg)](https://www.codetriage.com/ethereum/mist)
 
-The Mist browser is the tool of choice to browse and use Ðapps.
+The Won Mist browser is the tool of choice to browse and use Ðapps.
 
-For the Mist API see [MISTAPI.md](MISTAPI.md).
+For the Won Mist API see [MISTAPI.md](MISTAPI.md).
 
 
 ## Help and troubleshooting
 
-In order to get help regarding Mist or Won Wallet:
+In order to get help regarding Won Mist or Won Wallet:
 
 1.  Please check the [Mist troubleshooting guide](https://github.com/WONDevelopment/won-mist/wiki).
 1.  Go to our [Gitter channel](https://gitter.im/WONDevelopment/won-mist) to connect with the community for instant help.
@@ -45,7 +45,7 @@ apt-get install libgconf2-4
 The data folder for Mist depends on your operating system:
 
 - Windows `%APPDATA%\Mist`
-- macOS `~/Library/Application\ Support/Mist`
+- macOS `~/Library/Application\ Support/Won Mist`
 - Linux `~/.config/Mist`
 
 ## Development
@@ -79,7 +79,7 @@ $ cd mist
 $ yarn
 ```
 
-### Run Mist
+### Run Won Mist
 
 For development we start the interface with a Meteor server for auto-reload etc.
 
@@ -148,7 +148,7 @@ $ yarn dev:electron --rpc path/to/gwon.ipc
 ...is the same as doing...
 
 ```bash
-$ yarn dev:electron --rpc /my/geth.ipc --node-ipcpath /path/to/geth.ipc
+$ yarn dev:electron --rpc /my/gwon.ipc --node-ipcpath /path/to/gwon.ipc
 ```
 
 ### Creating a local private net
@@ -159,7 +159,7 @@ If you would like to quickly set up a local private network on your computer, ru
 gwon --dev
 ```
 
-Look for the IPC path in the resulting geth output, then start Mist with:
+Look for the IPC path in the resulting gwon output, then start Mist with:
 
 ```bash
 $ yarn dev:electron --rpc path/to/gwon.ipc
@@ -183,7 +183,7 @@ $ yarn build:dapp
 
 #### Generate packages
 
-To generate the binaries for Mist run:
+To generate the binaries for Won Mist run:
 
 ```bash
 $ yarn build:mist
@@ -239,7 +239,7 @@ $ yarn task clean-dist
 
 Tests run using [Spectron](https://github.com/electron/spectron/), a webdriver.io runner built for Electron.
 
-First make sure to build Mist with:
+First make sure to build Won Mist with:
 
 ```bash
 $ yarn build:mist
