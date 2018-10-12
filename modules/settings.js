@@ -93,7 +93,7 @@ class Settings {
   }
 
   get appName() {
-    return this.uiMode === 'mist' ? 'Mist' : 'Won Wallet';
+    return this.uiMode === 'mist' ? 'Won Mist' : 'Won Wallet';
   }
 
   get appLicense() {

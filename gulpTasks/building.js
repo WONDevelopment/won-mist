@@ -12,7 +12,7 @@ const shell = require('shelljs');
 const version = require('../package.json').version;
 
 const type = options.type;
-const applicationName = options.wallet ? 'Won Wallet' : 'Mist';
+const applicationName = options.wallet ? 'Won Wallet' : 'Won Mist';
 
 gulp.task('clean-dist', cb => {
   return del([`./dist_${type}`], cb);

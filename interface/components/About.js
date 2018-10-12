@@ -5,7 +5,7 @@ class About extends React.Component {
     const appIconPath = `file://${window.dirname}/icons/${
       window.mistMode
     }/icon2x.png`;
-    const appName = window.mistMode === 'mist' ? 'Mist' : 'Won Wallet';
+    const appName = window.mistMode === 'mist' ? 'Won Mist' : 'Won Wallet';
 
     return (
       <div className="row popup-windows about">

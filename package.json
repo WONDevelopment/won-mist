@@ -1,12 +1,12 @@
 {
-  "name": "Mist",
+  "name": "WonMist",
   "version": "0.1.0",
   "license": "GPL-3.0",
-  "author": "Ethereum Mist Team <mist@ethereum.org>",
-  "description": "Ethereum Mist",
+  "author": "Won Mist Team <won-mist@worldopennetwork.net>",
+  "description": "Won Mist",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereum/mist.git"
+    "url": "https://github.com/WONDevelopment/won-mist.git"
   },
   "scripts": {
     "precommit": "pretty-quick --staged",
