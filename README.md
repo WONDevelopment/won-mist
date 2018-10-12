@@ -44,9 +44,9 @@ apt-get install libgconf2-4
 
 The data folder for Mist depends on your operating system:
 
-- Windows `%APPDATA%\Mist`
-- macOS `~/Library/Application\ Support/Won Mist`
-- Linux `~/.config/Mist`
+- Windows `%APPDATA%\Won Mist`
+- macOS `~/Library/Application\ Support/Won\ Mist`
+- Linux `~/.config/Won\ Mist`
 
 ## Development
 
@@ -75,7 +75,7 @@ Now you're ready to initialize Mist for development:
 
 ```bash
 $ git clone https://github.com/WONDevelopment/won-mist.git
-$ cd mist
+$ cd won-mist
 $ yarn
 ```
 
@@ -92,7 +92,7 @@ $ yarn dev:meteor
 In the original window you can then start Mist with:
 
 ```bash
-$ cd mist
+$ cd won-mist
 $ yarn dev:electron
 ```
 
@@ -117,7 +117,7 @@ $ cd my/path/meteor-dapp-wallet/app && meteor --port 3050
 In the original window you can then start Mist using wallet mode:
 
 ```bash
-$ cd mist
+$ cd won-mist
 $ yarn dev:electron --mode wallet
 ```
 
