@@ -135,7 +135,7 @@ app.on('ready', async () => {
     dialog.showErrorBox(
       'Insecure RPC connection',
       `
-WARNING: You are connecting to an Ethereum node via: ${Settings.rpcHttpPath}
+WARNING: You are connecting to an Won node via: ${Settings.rpcHttpPath}
 
 This is less secure than using local IPC - your passwords will be sent over the wire in plaintext.
 
@@ -307,7 +307,7 @@ function checkForLegacyChain() {
         detail: global.i18n.t('mist.errors.legacyChain.description')
       },
       () => {
-        shell.openExternal('https://github.com/ethereum/mist/releases');
+        shell.openExternal('https://github.com/WONDevelopment/won-mist/releases');
         store.dispatch(quitApp());
       }
     );

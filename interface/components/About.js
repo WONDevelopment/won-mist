@@ -29,8 +29,8 @@ class About extends React.Component {
             License {window.mist.license}
             <br />
             GitHub{' '}
-            <a href="https://github.com/ethereum/mist" target="_blank">
-              github.com/ethereum/mist
+           <a href="https://github.com/WONDevelopment/won-mist" target="_blank">
+          <small>github.com/WONDevelopment/won-mist</small>
             </a>
           </p>
           <small>Copyright 2018 Ethereum Foundation</small>
