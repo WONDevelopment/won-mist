@@ -133,9 +133,9 @@ gulp.task('build-dist', cb => {
     productName: applicationName,
     description: applicationName,
     license: 'GPL-3.0',
-    homepage: 'https://github.com/ethereum/mist',
+    homepage: 'https://github.com/WONDevelopment/won-mist',
     build: {
-      appId: `org.ethereum.${type}`,
+      appId: `org.worldopennetwork.${type}`,
       asar: true,
       directories: {
         buildResources: '../build',
