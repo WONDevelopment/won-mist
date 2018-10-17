@@ -39,10 +39,12 @@
                     </h2>
                     <div class="clear"></div>
                     {{> elements_balance balance=balance changeUnit=true showAllDecimals=true}}
+                    <div class="clear"></div>
+                    <span class="kyc-info">{{getKycInfo}}</span>
                 </header>
 
 
-                {{#with tokens}}
+                {{#with tokens queryKycInfo}}
                     <table class="token-list dapp-zebra">
                         <tbody>
                             {{#each this}}
@@ -121,7 +123,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="{{pathFor route='sendTo' address=(toChecksumAddress address)}}" title="{{toChecksumAddress address}}">
+                            <a href="{{pathFor route='sendTo' address=(toChecksumAddress address)}}" title="{{toChecksumAddress address}}" class="{{isKycAddress}}">
                                 <i class="icon-arrow-down"></i>
                                 {{i18n "wallet.accounts.buttons.deposit"}}
                             </a>

@@ -150,6 +150,35 @@ Template['elements_account'].helpers({
     */
   ensClass: function() {
     return this.ens ? 'ens-name' : 'not-ens-name';
+  },
+  /**
+   Send query request of KYC Information
+   @method (queryKycInfo)
+   */
+  queryKycInfo: function() {
+    var account = Template.parentData(2);
+    var template = Template.instance();
+    web3.won
+      .getKycInfo(account.address)
+      .then(res => {
+        // console.info(account.address, res.level);
+        TemplateVar.set(template, 'kycLevel', res.level);
+      })
+      .catch(console.error);
+  },
+  /**
+   Get KYC level
+   @method (getKycLevel)
+   */
+  getKycLevel: function() {
+    return 'kycLevel = ' + TemplateVar.get('kycLevel');
+  },
+  /**
+   Whether has kyc
+   @method (IsKyc)
+   */
+  isKycAddress: function() {
+    return TemplateVar.get('kycLevel') == 0 ? 'not-kyc-color' : '';
   }
 });
 

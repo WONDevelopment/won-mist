@@ -241,6 +241,43 @@ Template['views_account'].helpers({
           .reverse()
           .join(' ▸ ')
       : this.name;
+  },
+  /**
+     Send query request of KYC Information
+     @method (queryKycInfo)
+     */
+  queryKycInfo: function() {
+    var template = Template.instance();
+    web3.won
+      .getKycInfo(this.address)
+      .then(res => {
+        // console.info(account.address, res.level);
+        TemplateVar.set(template, 'kycLevel', res.level);
+        TemplateVar.set(template, 'kycProvider', res.provider);
+        TemplateVar.set(template, 'kycZone', res.zone);
+      })
+      .catch(console.error);
+  },
+  /**
+     Get KYC level
+     @method (getKycLevel)
+     */
+  getKycInfo: function() {
+    return (
+      'KYC Info: level=' +
+      TemplateVar.get('kycLevel') +
+      ', zone=' +
+      TemplateVar.get('kycZone') +
+      ', provider=' +
+      TemplateVar.get('kycProvider')
+    );
+  },
+  /**
+     Whether has kyc
+     @method (IsKyc)
+     */
+  isKycAddress: function() {
+    return TemplateVar.get('kycLevel') == 0 ? 'disabled-link' : '';
   }
 });
 

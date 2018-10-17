@@ -998,3 +998,41 @@ table.transactions {
     margin-right: 3px;
   }
 }
+
+.tooltip {
+  position: relative;
+  display: block;
+  //border-bottom: 1px dotted black;
+
+  .tooltip-text {
+    visibility: hidden;
+    display: inline-block;
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(85, 85, 85, 0.86);
+    font-size: x-small !important;
+    color: #02a8f3 !important;
+    text-transform: capitalize !important;
+
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  &:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+a.disabled-link {
+  pointer-events: none;
+  color: #7f7f7f !important;
+}
+
+span.kyc-info {
+  color: #7f7f7f !important;
+}
