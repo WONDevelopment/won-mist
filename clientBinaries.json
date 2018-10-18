@@ -1,38 +1,38 @@
 {
   "clients": {
     "Gwon": {
-      "version": "1.8.4",
+      "version": "1.8.5",
       "platforms": {
         "linux": {
           "x64": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-linux-amd64-1.8.4-05cf3f1c.tar.gz",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-linux-amd64-1.8.5-b228f9e4.tar.gz",
               "type": "tar",
-              "md5": "4c64b87dc4f13f1f4ad2ab78803567de",
-              "bin": "gwon-linux-amd64-1.8.4-05cf3f1c/gwon"
+              "md5": "837a0717c06b8b57871a613cb213c583",
+              "bin": "gwon-linux-amd64-1.8.5-b228f9e4/gwon"
             },
             "bin": "gwon",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.4"]
+                "output": ["Gwon", "1.8.5"]
               }
             }
           },
           "ia32": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-linux-386-1.8.4-05cf3f1c.tar.gz",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-linux-386-1.8.5-b228f9e4.tar.gz",
               "type": "tar",
-              "md5": "8f64711f333e443bdcd74a8fa4305bcf",
-              "bin": "gwon-linux-386-1.8.4-05cf3f1c/gwon"
+              "md5": "e0de90902f9fad00bcce7c27e3ae8fcc",
+              "bin": "gwon-linux-386-1.8.5-b228f9e4/gwon"
             },
             "bin": "gwon",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.4"]
+                "output": ["Gwon", "1.8.5"]
               }
             }
           }
@@ -41,16 +41,16 @@
           "x64": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-darwin-amd64-1.8.4-05cf3f1c.tar.gz",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-darwin-amd64-1.8.5-b228f9e4.tar.gz",
               "type": "tar",
-              "md5": "dbbd85fd3a171dcce6d843db3c354c84",
-              "bin": "gwon-darwin-amd64-1.8.4-05cf3f1c/gwon"
+              "md5": "5d8278ffeefab5ffae836968a5c04ab1",
+              "bin": "gwon-darwin-amd64-1.8.5-b228f9e4/gwon"
             },
             "bin": "gwon",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.4"]
+                "output": ["Gwon", "1.8.5"]
               }
             }
           }
@@ -59,32 +59,32 @@
           "x64": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-windows-amd64-1.8.4-05cf3f1c.zip",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-windows-amd64-1.8.5-b228f9e4.zip",
               "type": "zip",
-              "md5": "89ea3814cf92b9bc0e561d53702c5afd",
-              "bin": "gwon-windows-amd64-1.8.4-05cf3f1c\\gwon.exe"
+              "md5": "b6eb9aa7fe78664320f4d2ab0051eb17",
+              "bin": "gwon-windows-amd64-1.8.5-b228f9e4\\gwon.exe"
             },
             "bin": "gwon.exe",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.4"]
+                "output": ["Gwon", "1.8.5"]
               }
             }
           },
           "ia32": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-windows-386-1.8.4-05cf3f1c.zip",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-windows-386-1.8.5-b228f9e4.zip",
               "type": "zip",
-              "md5": "ff74becacd8cda3779b7dd2787416e8e",
-              "bin": "gwon-windows-386-1.8.4-05cf3f1c\\gwon.exe"
+              "md5": "75ecfa5075cbb7ba0545f632ffb1de39",
+              "bin": "gwon-windows-386-1.8.5-05cf3f1c\\gwon.exe"
             },
             "bin": "gwon.exe",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.4"]
+                "output": ["Gwon", "1.8.5"]
               }
             }
           }
