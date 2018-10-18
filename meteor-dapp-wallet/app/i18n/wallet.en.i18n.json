@@ -28,9 +28,9 @@
         "balance": "Balance",
         "connecting": "Connecting...",
         "connectionErrorMist":
-          "Unable to connect. Please start geth using:<br><br><small><code>__node__</code><br><br>Make sure you set your IPC path to the default one, when using a different <code>datadir</code>, e.g.<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Ethereum/geth.ipc</code><br>or<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.ethereum/geth.ipc</code>. <br><br>Optional add: <code>--unlock &lt;yourAccount&gt;</code></small>",
+          "Unable to connect. Please start gwon using:<br><br><small><code>__node__</code><br><br>Make sure you set your IPC path to the default one, when using a different <code>datadir</code>, e.g.<br><code>gwon --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Won/gwon.ipc</code><br>or<br><code>gwon --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.won/gwon.ipc</code>. <br><br>Optional add: <code>--unlock &lt;yourAccount&gt;</code></small>",
         "connectionErrorBrowser":
-          "Unable to connect. Please start geth with the following options:<br><br><small><code>__node__</code><br><br>Optional add: <code>--unlock &lt;yourAccount&gt;</code></small>",
+          "Unable to connect. Please start gwon with the following options:<br><br><small><code>__node__</code><br><br>Optional add: <code>--unlock &lt;yourAccount&gt;</code></small>",
         "pendingConfirmationsBadge": "Pending Confirmation!",
         "nodeSyncing": "__blockDiff__ blocks left",
         "blockReceived": "New block received",
@@ -49,7 +49,7 @@
       },
       "error": {
         "wrongChain":
-          "You seem to be on a different chain.  Please restart the Ethereum Wallet App!"
+          "You seem to be on a different chain.  Please restart the Won Wallet App!"
       },
       "warnings": {
         "txOriginVulnerabilityWallet":
@@ -116,7 +116,7 @@
       "walletsDescriptionNotEnoughFunds":
         "Once you have more than 1 Won you can create more sophisticated contracts. Wallets are smart contracts that allow your funds to be controlled by multiple accounts.  They can have an optional daily limit on withdrawals to increase security.  Create your own custom contracts on the <em>Contracts</em> tab.",
       "accountsDescription":
-        "Accounts are password protected keys that can hold Won and Ethereum-based tokens.  They can control contracts, but can't display incoming transactions.",
+        "Accounts are password protected keys that can hold Won and Won-based tokens.  They can control contracts, but can't display incoming transactions.",
       "buttons": {
         "deposit": "Transfer Won & Tokens",
         "buyEther": "Buy won",
@@ -335,7 +335,7 @@
       "subTitle": "Added tokens",
       "admin": "__name__ (admin page)",
       "description":
-        "Tokens are currencies and other fungibles built on the Ethereum platform. In order for accounts to watch for tokens and send them, you have to add their address to this list. You can create your own token by simply modifying <a href=\"https://ethereum.org/token#the-code\" target=\"_blank\">this example of a custom token contract</a> or learning more about <a href=\"https://www.ethereum.org/token\" target=\"_blank\">Ethereum Tokens</a>.",
+        "Tokens are currencies and other fungibles built on the Won platform. In order for accounts to watch for tokens and send them, you have to add their address to this list. You can create your own token by simply modifying <a href=\"https://won.org/token#the-code\" target=\"_blank\">this example of a custom token contract</a> or learning more about <a href=\"https://www.won.org/token\" target=\"_blank\">Won Tokens</a>.",
       "deleteToken":
         "Do you want to remove the token <strong>__token__</strong> from your list?",
       "addedToken": "Added __token__ to your watch list",
@@ -376,7 +376,7 @@
       "pickContract": "Pick a contract",
       "pickFunction": "Pick a function",
       "noContract":
-        "<p>Put the source of the contract you want here. You can find many examples of contracts at the <a href=\"http://ethereum.org\" target=\"_blank\">ethereum.org</a>: </p> <ul><li><a href=\"http://ethereum.org/token#the-code\" target=\"_blank\">Build a token</a></li><li><a href=\"http://ethereum.org/crowdsale#the-code\" target=\"_blank\">Start a crowdsale</a></li><li><a href=\"http://ethereum.org/dao#the-code\" target=\"_blank\">Create a blockchain organization</a></li></ul>",
+        "<p>Put the source of the contract you want here. You can find many examples of contracts at the <a href=\"http://won.org\" target=\"_blank\">won.org</a>: </p> <ul><li><a href=\"http://won.org/token#the-code\" target=\"_blank\">Build a token</a></li><li><a href=\"http://won.org/crowdsale#the-code\" target=\"_blank\">Start a crowdsale</a></li><li><a href=\"http://won.org/dao#the-code\" target=\"_blank\">Create a blockchain organization</a></li></ul>",
       "buttons": {
         "showContractInfo": "Show contract info",
         "hideContractInfo": "Hide contract info",

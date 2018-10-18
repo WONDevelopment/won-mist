@@ -43,7 +43,7 @@
         "devToolsWebview": "__webview__",
         "runTests": "运行测试",
         "logFiles": "显示日志文件",
-        "ethereumNode": "以太坊节点",
+        "ethereumNode": "WON节点",
         "network": "网络",
         "mainNetwork": "主网络",
         "startMining": "⛏ 开启挖矿（仅限Testnet网络）",
@@ -68,7 +68,7 @@
       "timeSync": {
         "title": "你的计算机时间同步不准确！",
         "description":
-          "为了和以太坊网络保持同步，你的计算机时间和服务器时间需要保持同步。",
+          "为了和WON网络保持同步，你的计算机时间和服务器时间需要保持同步。",
         "win32":
           "从系统选项中打开网络时间设置并勾选。详细信息参考：http://www.guidingtech.com/3119/windows-clock-sync/",
         "linux":
@@ -84,7 +84,7 @@
       "legacyChain": {
         "title": "Legacy chain detected",
         "description":
-          "Your node is currently on the unsupported Ethereum Classic chain. To use this chain use tools provided by the ethereum classic project at\nhttps://ethereumclassic.github.io.\n\nTo revert to the main ethereum chain follow the tutorial here:\nhttps://github.com/ethereum/mist/releases/0.8.2"
+          "Your node is currently on the unsupported Won Classic chain. To use this chain use tools provided by the won classic project at\nhttps://ethereumclassic.github.io.\n\nTo revert to the main won chain follow the tutorial here:\nhttps://github.com/won/mist/releases/0.8.2"
       }
     },
     "rightClick": {
@@ -123,22 +123,22 @@
       }
     },
     "startScreen": {
-      "runningNodeFound": "发现正在运行的以太坊节点！",
+      "runningNodeFound": "发现正在运行的WON节点！",
       "nodeConnectionTimeout":
-        "无法开启以太坊节点！<br><small>如果你已经<a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>安装Geth</a>，使用此命令运行： <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> 或者上报此问题 </a></small>",
+        "无法开启WON节点！<br><small>如果你已经<a href='https://www.won.org/cli#gwon' class='button' target='_blank'>安装Geth</a>，使用此命令运行： <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> 或者上报此问题 </a></small>",
       "nodeBinaryNotFound":
-        "找不到以太坊节点安装文件！<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> 请事先手动开启一个节点 </a> </small>",
-      "nodeSyncing": "需要同步以太坊节点，请等待……",
+        "找不到WON节点安装文件！<br><small> <a href='https://www.won.org/cli#gwon' class='button' target='_blank'> 请事先手动开启一个节点 </a> </small>",
+      "nodeSyncing": "需要同步WON节点，请等待……",
       "nodeSyncInfo": "正在下载第__displayBlock__块，共__highestBlock__。",
       "nodeSyncConnecting": "正在查找节点……",
-      "nodeStarting": "Ethereum node starting up...",
-      "nodeStarted": "Ethereum node started",
-      "nodeConnected": "Ethereum node connected",
-      "nodeStopping": "Ethereum node stopping...",
-      "nodeStopped": "Ethereum node stopped",
-      "nodeError": "Ethereum node connection error :'(",
+      "nodeStarting": "Won node starting up...",
+      "nodeStarted": "Won node started",
+      "nodeConnected": "Won node connected",
+      "nodeStopping": "Won node stopping...",
+      "nodeStopped": "Won node stopped",
+      "nodeError": "Won node connection error :'(",
       "unableToBindPort":
-        "Ethereum node cannot run. Is another instance already running?",
+        "Won node cannot run. Is another instance already running?",
       "nodeSyncInfoStates":
         "Downloading block __displayBlock__ of __highestBlock__, <br> Downloading chain structure __displayState__ of __displayKnownStates__",
       "nodeSyncFoundPeers": "Connecting to __peers__ peers...",
@@ -148,7 +148,7 @@
         "downloading": "Downloading new node...",
         "loadConfig": "Loading client config...",
         "filtering": "Filtering client binaries...",
-        "done": "Ethereum node up-to-date...",
+        "done": "Won node up-to-date...",
         "error": "Error running downloaded binary."
       }
     },
@@ -209,7 +209,7 @@
       "importAccount": {
         "doYouHaveAWalletFile": "你拥有一个钱包文件吗？",
         "walletFileDescription":
-          "<p>如果你参与了2014年的以太坊预售，你应该有一个文件名为<code>ethereum_wallet_backup.json</code>的钱包文件。在你购买后已被下载并且也发送到你邮箱。</p>",
+          "<p>如果你参与了2014年的WON预售，你应该有一个文件名为<code>ethereum_wallet_backup.json</code>的钱包文件。在你购买后已被下载并且也发送到你邮箱。</p>",
         "dropFilesHere": "预售文件拖入此处",
         "importing": "正在导入……",
         "buttons": {

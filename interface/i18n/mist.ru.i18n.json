@@ -43,7 +43,7 @@
         "devToolsWebview": "__webview__",
         "runTests": "Запустить тесты",
         "logFiles": "Показать журнал",
-        "ethereumNode": "Ethereum-нода",
+        "ethereumNode": "Won-нода",
         "network": "Сеть",
         "mainNetwork": "Основная сеть",
         "startMining": "⛏ Запустить майнинг",
@@ -69,7 +69,7 @@
       "timeSync": {
         "title": "Часы на вашем компьютере не синхронизированы.",
         "description":
-          "Для успешной синхронизации с сетью Ethereum вам необходимо синхронизировать часы вашего компьютера с текущим временем на сервере.",
+          "Для успешной синхронизации с сетью Won вам необходимо синхронизировать часы вашего компьютера с текущим временем на сервере.",
         "win32":
           "Откройте системные настройки \"Дата и время\" и установите флажок для настройки времени по Интернету. Смотрите подробности в этом описании: http://www.guidingtech.com/3119/windows-clock-sync/",
         "linux":
@@ -85,7 +85,7 @@
       "legacyChain": {
         "title": "Legacy chain detected",
         "description":
-          "Your node is currently on the unsupported Ethereum Classic chain. To use this chain use tools provided by the ethereum classic project at\nhttps://ethereumclassic.github.io.\n\nTo revert to the main ethereum chain follow the tutorial here:\nhttps://github.com/ethereum/mist/releases/0.8.2"
+          "Your node is currently on the unsupported Won Classic chain. To use this chain use tools provided by the won classic project at\nhttps://ethereumclassic.github.io.\n\nTo revert to the main won chain follow the tutorial here:\nhttps://github.com/won/mist/releases/0.8.2"
       }
     },
     "rightClick": {
@@ -109,7 +109,7 @@
       "privateNetwork": "Приватная сеть",
       "test": "test",
       "testnetExplain":
-        "Вы подключены к тестовой Ethereum-сети, НЕ ОТПРАВЛЯЙТЕ настоящий эфир на эти адреса",
+        "Вы подключены к тестовой Won-сети, НЕ ОТПРАВЛЯЙТЕ настоящий эфир на эти адреса",
       "timeSinceBlock": "Прошедшее время ожидания нового блока"
     },
     "sidebar": {
@@ -124,21 +124,21 @@
       }
     },
     "startScreen": {
-      "runningNodeFound": "Обнаружена запущеная Ethereum-нода!",
+      "runningNodeFound": "Обнаружена запущеная Won-нода!",
       "nodeConnectionTimeout":
-        "Не удалось запустить Ethereum-ноду!<br><small>Если вы <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>установили Geth</a>, используйте следующую команду для запуска: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Либо сообщите от проблеме </a></small>",
+        "Не удалось запустить Won-ноду!<br><small>Если вы <a href='https://www.won.org/cli#gwon' class='button' target='_blank'>установили Geth</a>, используйте следующую команду для запуска: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Либо сообщите от проблеме </a></small>",
       "nodeBinaryNotFound":
-        "Не найдены программные файлы для Ethereum-ноды!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Пожалуйста, для начала изучите руководство. </a> </small>",
-      "nodeStarting": "Ethereum-нода запускается...",
-      "nodeStarted": "Ethereum-нода запущена",
-      "nodeConnected": "Ethereum-нода подключена",
-      "nodeStopping": "Ethereum-нода останавливается...",
-      "nodeStopped": "Ethereum-нода остановлена",
-      "nodeError": "Ошибка подключения к Ethereum-ноде :'(",
+        "Не найдены программные файлы для Won-ноды!<br><small> <a href='https://www.won.org/cli#gwon' class='button' target='_blank'> Пожалуйста, для начала изучите руководство. </a> </small>",
+      "nodeStarting": "Won-нода запускается...",
+      "nodeStarted": "Won-нода запущена",
+      "nodeConnected": "Won-нода подключена",
+      "nodeStopping": "Won-нода останавливается...",
+      "nodeStopped": "Won-нода остановлена",
+      "nodeError": "Ошибка подключения к Won-ноде :'(",
       "unableToBindPort":
-        "Ethereum-нода не запущена. Может запущен другой экземпляр?",
+        "Won-нода не запущена. Может запущен другой экземпляр?",
       "nodeSyncing":
-        "Ethereum-ноде необходимо синхронизироваться, пожалуйста подождите...",
+        "Won-ноде необходимо синхронизироваться, пожалуйста подождите...",
       "nodeSyncInfo": "Загружено блоков __displayBlock__ из __highestBlock__",
       "nodeSyncInfoStates":
         "Загружено блоков __displayBlock__ из __highestBlock__, <br> Загружено частей структуры блокчейна __displayState__ из __displayKnownStates__",
@@ -150,7 +150,7 @@
         "downloading": "Downloading new node...",
         "loadConfig": "Loading client config...",
         "filtering": "Filtering client binaries...",
-        "done": "Ethereum node up-to-date...",
+        "done": "Won node up-to-date...",
         "error": "Error running downloaded binary."
       }
     },
@@ -216,7 +216,7 @@
       "importAccount": {
         "doYouHaveAWalletFile": "У вас есть файл кошелька?",
         "walletFileDescription":
-          "<p>Если вы участвовали в Ethereum Pre-sale 2014, у вас должен быть файл с именем <code>ethereum_wallet_backup.json</code>. Он был загружен после продажи, а также отправлен на электронную почту</p>",
+          "<p>Если вы участвовали в Won Pre-sale 2014, у вас должен быть файл с именем <code>ethereum_wallet_backup.json</code>. Он был загружен после продажи, а также отправлен на электронную почту</p>",
         "dropFilesHere": "Перетащите сюда ваш файл",
         "importing": "Импорт...",
         "buttons": {

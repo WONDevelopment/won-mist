@@ -26,9 +26,9 @@
         "note": "Shënim",
         "balance": "Balanca",
         "connectionErrorMist":
-          "Nuk mund të lidhet. Ju lutemi të nisni geth duke përdorur:<br><br><small><code>__node__</code><br><br>Sigurohuni që vendndodhja e IPC të jetë ajo e parazgjedhur, nëse përdoret <code>datadir</code> e ndryshme, p.sh.<br><code>geth --datadir ... --ipcpath /Users/&lt;perdoruesiJuaj&gt;/Library/Ethereum/geth.ipc</code><br>or<br><code>geth --datadir ... --ipcpath /Users/&lt;perdoruesiJuaj&gt;/.ethereum/geth.ipc</code>. <br><br>Sipas dëshirës shtoni: <code>--unlock &lt;llogariaJuaj&gt;.</code></small>",
+          "Nuk mund të lidhet. Ju lutemi të nisni gwon duke përdorur:<br><br><small><code>__node__</code><br><br>Sigurohuni që vendndodhja e IPC të jetë ajo e parazgjedhur, nëse përdoret <code>datadir</code> e ndryshme, p.sh.<br><code>gwon --datadir ... --ipcpath /Users/&lt;perdoruesiJuaj&gt;/Library/Won/gwon.ipc</code><br>or<br><code>gwon --datadir ... --ipcpath /Users/&lt;perdoruesiJuaj&gt;/.won/gwon.ipc</code>. <br><br>Sipas dëshirës shtoni: <code>--unlock &lt;llogariaJuaj&gt;.</code></small>",
         "connectionErrorBrowser":
-          "Nuk mund të lidhet. Ju lutemi të nisni geth duke përdorur:<br><br><small><code>__node__</code><br><br>Sipas dëshirës shtoni: <code>--unlock &lt;llogariaJuaj&gt;.</code></small>",
+          "Nuk mund të lidhet. Ju lutemi të nisni gwon duke përdorur:<br><br><small><code>__node__</code><br><br>Sipas dëshirës shtoni: <code>--unlock &lt;llogariaJuaj&gt;.</code></small>",
         "pendingConfirmationsBadge": "Duke pritur konfirmim!",
         "nodeSyncing": "__blockDiff__ blloqe të mbetura",
         "blockReceived": "U mor bllok i ri",
@@ -45,7 +45,7 @@
       },
       "error": {
         "wrongChain":
-          "Duket se jeni në zinxhir tjetër. Ju lutemi të rihapni aplikacionin e kuletës Ethereum!"
+          "Duket se jeni në zinxhir tjetër. Ju lutemi të rihapni aplikacionin e kuletës Won!"
       },
       "warnings": {
         "txOriginVulnerabilityWallet":
@@ -330,7 +330,7 @@
       "subTitle": "Valutat e shtuara",
       "admin": "__name__ (faqja e administrimit)",
       "description":
-        "Valutat janë elemente të këmbyeshme të ndërtuara mbi platformën Ethereum. Në mënyrë që llogaritë të mund të kontrollojnë për valuta dhe t'i dërgojnë ato, duhet të shtoni adresën e tyre në këtë listë. Mund të krijoni valutën tuaj personale thjesht duke modifikuar <a href=\"https://ethereum.org/token#the-code\" target=\"_blank\">këtë shembull kontrate valute të personalizuar</a> ose duke mësuar më shumë rreth <a href=\"https://www.ethereum.org/token\" target=\"_blank\">Valutave Ethereum</a>.",
+        "Valutat janë elemente të këmbyeshme të ndërtuara mbi platformën Won. Në mënyrë që llogaritë të mund të kontrollojnë për valuta dhe t'i dërgojnë ato, duhet të shtoni adresën e tyre në këtë listë. Mund të krijoni valutën tuaj personale thjesht duke modifikuar <a href=\"https://won.org/token#the-code\" target=\"_blank\">këtë shembull kontrate valute të personalizuar</a> ose duke mësuar më shumë rreth <a href=\"https://www.won.org/token\" target=\"_blank\">Valutave Won</a>.",
       "deleteToken":
         "A doni ta hiqni valutën <strong>__token__</strong> nga lista juaj?",
       "addedToken": "__token__ u shtua në listën tuaj të vëzhgimit",
@@ -361,7 +361,7 @@
       "pickContract": "Zgjidh një kontratë",
       "pickFunction": "Zgjidh një funksion",
       "noContract":
-        "<p>Vendosni burimin e kontratës që doni këtu. Mund të gjeni shumë shembuj kontratash në <a href=\"http://ethereum.org\" target=\"_blank\">ethereum.org</a>: </p> <ul><li><a href=\"http://ethereum.org/token#the-code\" target=\"_blank\">Krijo një valutë</a></li><li><a href=\"http://ethereum.org/crowdsale#the-code\" target=\"_blank\">Nis një shitje në masë</a></li><li><a href=\"http://ethereum.org/dao#the-code\" target=\"_blank\">Krijo një organizatë në zinxhirin e blloqeve</a></li></ul>",
+        "<p>Vendosni burimin e kontratës që doni këtu. Mund të gjeni shumë shembuj kontratash në <a href=\"http://won.org\" target=\"_blank\">won.org</a>: </p> <ul><li><a href=\"http://won.org/token#the-code\" target=\"_blank\">Krijo një valutë</a></li><li><a href=\"http://won.org/crowdsale#the-code\" target=\"_blank\">Nis një shitje në masë</a></li><li><a href=\"http://won.org/dao#the-code\" target=\"_blank\">Krijo një organizatë në zinxhirin e blloqeve</a></li></ul>",
       "buttons": {
         "showContractInfo": "Shfaq informacion mbi kontratën",
         "hideContractInfo": "Fshih informacionin mbi kontratën",
