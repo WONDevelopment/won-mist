@@ -9,7 +9,7 @@
               "url":
                 "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-linux-amd64-1.8.5-b228f9e4.tar.gz",
               "type": "tar",
-              "md5": "837a0717c06b8b57871a613cb213c583",
+              "md5": "62acb4519d5db12cc0677b1ceb016029",
               "bin": "gwon-linux-amd64-1.8.5-b228f9e4/gwon"
             },
             "bin": "gwon",
@@ -25,7 +25,7 @@
               "url":
                 "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-linux-386-1.8.5-b228f9e4.tar.gz",
               "type": "tar",
-              "md5": "e0de90902f9fad00bcce7c27e3ae8fcc",
+              "md5": "1a24268ebb14dbd3927ae889d84b1ac9",
               "bin": "gwon-linux-386-1.8.5-b228f9e4/gwon"
             },
             "bin": "gwon",
@@ -43,7 +43,7 @@
               "url":
                 "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-darwin-amd64-1.8.5-b228f9e4.tar.gz",
               "type": "tar",
-              "md5": "5d8278ffeefab5ffae836968a5c04ab1",
+              "md5": "05073316af40df51d8417f378556560a",
               "bin": "gwon-darwin-amd64-1.8.5-b228f9e4/gwon"
             },
             "bin": "gwon",
@@ -61,7 +61,7 @@
               "url":
                 "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-windows-amd64-1.8.5-b228f9e4.zip",
               "type": "zip",
-              "md5": "b6eb9aa7fe78664320f4d2ab0051eb17",
+              "md5": "831d9a9e05bc97676cb0450fb244aeee",
               "bin": "gwon-windows-amd64-1.8.5-b228f9e4\\gwon.exe"
             },
             "bin": "gwon.exe",
@@ -77,7 +77,7 @@
               "url":
                 "https://github.com/WONDevelopment/go-won/releases/download/v1.8.4/gwon-windows-386-1.8.5-b228f9e4.zip",
               "type": "zip",
-              "md5": "75ecfa5075cbb7ba0545f632ffb1de39",
+              "md5": "2f7bf5cc9ab86c7d47e58b2546dda26b",
               "bin": "gwon-windows-386-1.8.5-05cf3f1c\\gwon.exe"
             },
             "bin": "gwon.exe",
