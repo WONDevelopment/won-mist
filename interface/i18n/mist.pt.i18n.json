@@ -178,7 +178,7 @@
         "estimatedGasError":
           "Transação inválida, se executada irá gastar todo o combustível dado.",
         "gasPrice": "Preço do combustível",
-        "perMillionGas": "won por milhão de combustível",
+        "perMillionGas": " por milhão de combustível",
         "gasLimit": "Providenciar taxa máxima",
         "data": "Dados",
         "buttons": {

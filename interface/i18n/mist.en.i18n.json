@@ -243,7 +243,7 @@
           "Couldn't estimate gas, resorting to default parameters. Transaction is likely cheaper than the estimate",
         "noEstimate": "We couldn't estimate the gas.",
         "gasPrice": "Gas price",
-        "perMillionGas": "won per million gas",
+        "perMillionGas": " per million gas",
         "gasLimit": "Provide maximum fee",
         "gasLoading": "Estimating gas...",
         "data": "Raw Data",

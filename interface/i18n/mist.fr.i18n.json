@@ -182,7 +182,7 @@
         "estimatedGasError":
           "Les données n'ont pas pu être executées et vont donc utiliser tout le gaz fourni.",
         "gasPrice": "Prix du gaz",
-        "perMillionGas": "won par million de gaz",
+        "perMillionGas": " par million de gaz",
         "gasLimit": "Fournir la taxe maximum",
         "data": "Données",
         "buttons": {

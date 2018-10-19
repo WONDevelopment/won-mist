@@ -195,7 +195,7 @@
           "The contract won't allow this transaction to be executed",
         "noEstimate": "We couldn't estimate the gas.",
         "gasPrice": "Gas price",
-        "perMillionGas": "won per million gas",
+        "perMillionGas": " per million gas",
         "gasLimit": "Provide maximum fee",
         "data": "Raw Data",
         "parameters": "Parameters",

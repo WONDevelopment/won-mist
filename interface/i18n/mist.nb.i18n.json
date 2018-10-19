@@ -179,7 +179,7 @@
         "estimatedGasError":
           "Data kan ikke utføres, så den kommer til å bruke all gass.",
         "gasPrice": "Gass pris",
-        "perMillionGas": "won per million gass",
+        "perMillionGas": " per million gass",
         "gasLimit": "Gi maksimal avgift",
         "data": "Data",
         "buttons": {

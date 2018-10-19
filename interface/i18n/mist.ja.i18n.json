@@ -182,7 +182,7 @@
         "estimatedGasError":
           "データが実行できませんでした、そのため全ての GAS が消費されます。",
         "gasPrice": "GAS 価格",
-        "perMillionGas": "100 万 GAS ごとの Won",
+        "perMillionGas": "/100 万 GAS ごとの",
         "gasLimit": "GAS リミット",
         "data": "データ",
         "buttons": {

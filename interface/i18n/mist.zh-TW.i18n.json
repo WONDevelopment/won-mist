@@ -177,7 +177,7 @@
         "estimatedFee": "預計消耗費用",
         "estimatedGasError": "資料無法被執行，因此這將消耗所有提供的Gas。",
         "gasPrice": "Gas價格",
-        "perMillionGas": "以太幣/每百萬gas",
+        "perMillionGas": "/每百萬gas",
         "gasLimit": "提供最大費用",
         "data": "數據",
         "buttons": {

@@ -224,7 +224,7 @@
         "estimatedGasError":
           "Dati non eseguibili, quindi verrà utilizzato tutto il gas fornito.",
         "gasPrice": "Prezzo carburante (Gas)",
-        "perMillionGas": "won per milioni di gas",
+        "perMillionGas": " per milioni di gas",
         "gasLimit": "Imposta limite di gas",
         "data": "Dati",
         "buttons": {

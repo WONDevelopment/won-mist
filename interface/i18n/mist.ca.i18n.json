@@ -228,7 +228,7 @@
           "El gas pot no ser suficient per acabar aquesta execució amb èxit.<br>Fés clic aquí per augmentar la quantitat de gas.",
         "noEstimate": "No s'ha pogut calcular el gas necessari.",
         "gasPrice": "Preu del Gas",
-        "perMillionGas": "won per un milió de gas",
+        "perMillionGas": " per un milió de gas",
         "gasLimit": "Proporciona la comissió màxima",
         "data": "Dades en brut",
         "parameters": "Paràmetres",

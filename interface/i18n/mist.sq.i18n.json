@@ -210,7 +210,7 @@
         "noEstimate":
           "Nuk mund të hamendësonim sasinë e nevojshme të karburantit.",
         "gasPrice": "Çmimi i karburantit",
-        "perMillionGas": "won për milion karburant",
+        "perMillionGas": " për milion karburant",
         "gasLimit": "Vendos tarifë maksimale",
         "data": "Të dhëna të paformatuara",
         "parameters": "Parametra",

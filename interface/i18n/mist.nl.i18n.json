@@ -214,7 +214,7 @@
           "Het contract staat niet toe dat deze transactie wordt uitgevoerd",
         "noEstimate": "We konden de hoeveelheid gas niet inschatten.",
         "gasPrice": "Gas prijs",
-        "perMillionGas": "Won per millioen gas",
+        "perMillionGas": " per millioen gas",
         "gasLimit": "Geef maximum transactie kosten aan",
         "data": "Ruwe Data",
         "parameters": "Parameters",

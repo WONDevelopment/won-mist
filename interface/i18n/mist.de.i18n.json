@@ -187,7 +187,7 @@
         "estimatedGasError":
           "Der Auftrag kann nicht ausgeführt werden, da er das gesamte vorgegebene Gas verbrauchen würde.",
         "gasPrice": "Gaspreis",
-        "perMillionGas": "Won pro Millionen Gas",
+        "perMillionGas": " pro Millionen Gas",
         "data": "Daten",
         "buttons": {
           "sendTransaction": "Transaktion absenden"
