@@ -119,8 +119,6 @@ EthAccounts._addAccounts = function() {
             }
 
             web3.won.getCoinbase().then(coinbase => {
-              console.info('========', coinbase);
-
               var doc = EthAccounts.findAll({
                 address: address
               }).fetch()[0];
