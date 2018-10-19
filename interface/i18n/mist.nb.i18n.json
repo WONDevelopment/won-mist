@@ -33,7 +33,8 @@
         "backup": "Sikkerhetskopier",
         "backupKeyStore": "Kontoer",
         "backupMist": "Applikasjonsdata",
-        "swarmUpload": "Opplasting til Swarm"
+        "swarmUpload": "Opplasting til Swarm",
+        "openExtWallet": "Open external wallet"
       },
       "develop": {
         "label": "Utvikle",

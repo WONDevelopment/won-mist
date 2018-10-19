@@ -19,7 +19,8 @@
         "backup": "Cópia de segurança",
         "backupKeyStore": "Contas",
         "backupMist": "Carteiras, contratos e etc",
-        "swarmUpload": "Subir arquivo para Swarm..."
+        "swarmUpload": "Subir arquivo para Swarm...",
+        "openExtWallet": "Open external wallet"
       },
       "edit": {
         "label": "Editar",

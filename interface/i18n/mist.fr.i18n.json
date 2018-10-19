@@ -33,7 +33,8 @@
         "backup": "Sauvegarder",
         "backupKeyStore": "Comptes",
         "backupMist": "Données de l'application",
-        "swarmUpload": "Télécharger à Swarm"
+        "swarmUpload": "Télécharger à Swarm",
+        "openExtWallet": "Portefeuille externe ouvert"
       },
       "develop": {
         "label": "Développement",

@@ -51,7 +51,8 @@
         "backup": "Backup",
         "backupKeyStore": "Accounts",
         "backupMist": "Applicatie Data",
-        "swarmUpload": "Uploaden naar Swarm"
+        "swarmUpload": "Uploaden naar Swarm",
+        "openExtWallet": "Open external wallet"
       },
       "develop": {
         "label": "Ontwikkelen",

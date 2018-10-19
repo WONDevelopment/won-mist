@@ -33,7 +33,8 @@
         "backup": "Резервное копирование",
         "backupKeyStore": "Аккаунтов",
         "backupMist": "Данных приложения",
-        "swarmUpload": "Загрузить в Swarm"
+        "swarmUpload": "Загрузить в Swarm",
+        "openExtWallet": "Открытый внешний кошелек"
       },
       "develop": {
         "label": "Дополнительно",

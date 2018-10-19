@@ -33,7 +33,8 @@
         "backup": "백업",
         "backupKeyStore": "계정키 백업",
         "backupMist": "어플리케이션 데이터",
-        "swarmUpload": "Swarm에 업로드"
+        "swarmUpload": "Swarm에 업로드",
+        "openExtWallet": "외부 지갑 열기"
       },
       "develop": {
         "label": "개발",

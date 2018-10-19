@@ -33,7 +33,8 @@
         "backup": "バックアップを取る",
         "backupKeyStore": "アカウント",
         "backupMist": "アプリケーションデータ",
-        "swarmUpload": "Swarm にアップロード"
+        "swarmUpload": "Swarm にアップロード",
+        "openExtWallet": "外部ウォレットを開く"
       },
       "develop": {
         "label": "開発",

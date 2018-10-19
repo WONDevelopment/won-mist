@@ -19,7 +19,8 @@
         "backup": "Backup",
         "backupKeyStore": "Accounts",
         "backupMist": "Dati applicativi",
-        "swarmUpload": "Carica su Swarm"
+        "swarmUpload": "Carica su Swarm",
+        "openExtWallet": "Aprire il portafoglio esterno"
       },
       "edit": {
         "label": "Modifica",

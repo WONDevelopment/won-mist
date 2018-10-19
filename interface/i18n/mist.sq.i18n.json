@@ -19,7 +19,8 @@
         "backup": "Ruaj kopje rezervë",
         "backupKeyStore": "Llogari",
         "backupMist": "Të Dhënat e Aplikimit",
-        "swarmUpload": "Ngarko në Swarm..."
+        "swarmUpload": "Ngarko në Swarm...",
+        "openExtWallet": "Open external wallet"
       },
       "edit": {
         "label": "Redakto",

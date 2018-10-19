@@ -33,7 +33,8 @@
         "backup": "Backup",
         "backupKeyStore": "Accounts",
         "backupMist": "Application Data",
-        "swarmUpload": "Upload to Swarm"
+        "swarmUpload": "Upload to Swarm",
+        "openExtWallet": "Open external wallet"
       },
       "develop": {
         "label": "Develop",

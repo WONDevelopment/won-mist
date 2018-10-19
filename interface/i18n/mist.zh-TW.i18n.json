@@ -33,7 +33,8 @@
         "backup": "備份",
         "backupKeyStore": "帳號",
         "backupMist": "應用程序數據",
-        "swarmUpload": "上传到Swarm"
+        "swarmUpload": "上传到Swarm",
+        "openExtWallet": "打開外部錢包"
       },
       "develop": {
         "label": "開發",

@@ -19,7 +19,8 @@
         "backup": "Copia de seguretat",
         "backupKeyStore": "Comptes",
         "backupMist": "Dades de l'aplicació",
-        "swarmUpload": "Pujar a Swarm..."
+        "swarmUpload": "Pujar a Swarm...",
+        "openExtWallet": "Open external wallet"
       },
       "edit": {
         "label": "Editar",

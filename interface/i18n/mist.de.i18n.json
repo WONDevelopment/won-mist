@@ -34,7 +34,8 @@
         "backup": "Sicherung",
         "backupKeyStore": "Konten",
         "backupMist": "Anwendungsdaten",
-        "swarmUpload": "Upload zum Swarm"
+        "swarmUpload": "Upload zum Swarm",
+        "openExtWallet": "Open external wallet"
       },
       "develop": {
         "label": "Entwicklung",
