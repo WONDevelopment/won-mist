@@ -26,7 +26,7 @@ Calculates the gas * gas price.
 */
 var calculateGasInWei = function(template, gas, gasPrice, returnGasPrice) {
   // Only defaults to 20 shannon if there's no default set
-  gasPrice = gasPrice || 20000000000;
+  // gasPrice = gasPrice || 20000000000;
 
   if (!_.isObject(gasPrice)) gasPrice = new BigNumber(String(gasPrice), 10);
 
@@ -38,12 +38,12 @@ var calculateGasInWei = function(template, gas, gasPrice, returnGasPrice) {
   var feeMultiplicator = Number(TemplateVar.get(template, 'feeMultiplicator'));
 
   // divide and multiply to round it to the nearest billion wei (1 shannon)
-  var billion = new BigNumber(1000000000);
-  gasPrice = gasPrice
-    .times(new BigNumber(toPowerFactor).toPower(feeMultiplicator))
-    .dividedBy(billion)
-    .round()
-    .times(billion);
+  // var billion = new BigNumber(1000000000);
+  // gasPrice = gasPrice
+  //   .times(new BigNumber(toPowerFactor).toPower(feeMultiplicator))
+  //   .dividedBy(billion)
+  //   .round()
+  //   .times(billion);
 
   return returnGasPrice ? gasPrice : gasPrice.times(gas);
 };

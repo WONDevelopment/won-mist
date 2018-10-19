@@ -28,14 +28,14 @@
         <small>+ {{i18n "wallet.send.estimatedFee"}}</small> {{estimatedFee}}
         <br>
         <small class="gas-price">
-            {{i18n "wallet.transactions.gasPrice"}} {{dapp_formatBalance gasPrice "0,0.0[000000000000000000] unit" "won"}}
+            {{i18n "wallet.transactions.gasPrice"}} {{dapp_formatBalance gasPrice "0,0.0[000000000000000000] unit" "wei"}}
             <br>
             {{i18n "wallet.send.texts.estimatedGas"}} {{estimatedGas}}
         </small>
-        <br>
-        <small>
-            {{i18n "wallet.send.provideGas"}} <input type="number" min="21000" class="gas dapp-tiny" value="{{estimatedGasPlusAddition}}">
-        </small>
+        <!--<br>-->
+        <!--<small>-->
+            <!--{{i18n "wallet.send.provideGas"}} <input type="number" min="21000" class="gas dapp-tiny" value="{{estimatedGasPlusAddition}}">-->
+        <!--</small>-->
     </p>
 
     {{#if data}}

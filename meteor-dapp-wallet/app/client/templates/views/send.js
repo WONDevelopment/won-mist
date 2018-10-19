@@ -622,13 +622,13 @@ Template['views_send'].events({
     if (selectedAccount && !TemplateVar.get('sending')) {
       // set gas down to 21 000, if its invalid data, to prevent high gas usage.
       if (estimatedGas === defaultEstimateGas || estimatedGas === 0)
-        estimatedGas = 210;
+        estimatedGas = 2100;
 
       // if its a wallet contract and tokens, don't need to remove the gas addition on send-all, as the owner pays
       if (sendAll && (selectedAccount.owners || tokenAddress !== 'won'))
         sendAll = false;
 
-      console.log('Providing gas: ', estimatedGas, sendAll ? '' : ' + 10000');
+      // console.log('Providing gas: ', estimatedGas, sendAll ? '' : ' + 10000');
 
       if (TemplateVar.get('selectedAction') === 'deploy-contract' && !data)
         return GlobalNotification.warning({
@@ -835,9 +835,9 @@ Template['views_send'].events({
               amount: amount,
               gasPrice: gasPrice,
               estimatedGas: estimatedGas,
-              estimatedGasPlusAddition: sendAll
-                ? estimatedGas
-                : estimatedGas + 10000, // increase the provided gas by 10k
+              estimatedGasPlusAddition: estimatedGas,
+              // ? estimatedGas
+              // : estimatedGas + 10000, // increase the provided gas by 10k
               data: data
             },
             ok: sendTransaction,
@@ -850,7 +850,8 @@ Template['views_send'].events({
 
         // LET MIST HANDLE the CONFIRMATION
       } else {
-        sendTransaction(sendAll ? estimatedGas : estimatedGas + 100000);
+        // sendTransaction(sendAll ? estimatedGas : estimatedGas + 100000);
+        sendTransaction(estimatedGas);
       }
     }
   }

@@ -14,7 +14,7 @@ var setWindowSize = function(template) {
   });
 };
 
-var defaultEstimateGas = 3000000;
+var defaultEstimateGas = 2100;
 
 /**
 The sendTransaction confirmation popup window template
@@ -311,7 +311,7 @@ Template['popupWindows_sendTransactionConfirmation'].helpers({
       const balance = web3.utils
         .toBN(gas || 0)
         .mul(web3.utils.toBN(this.gasPrice || 0));
-      return EthTools.formatBalance(balance, '0,0.0[0000000] unit', 'won');
+      return EthTools.formatBalance(balance, '0,0.0[0000000] unit', 'wei');
     }
   },
   /**
