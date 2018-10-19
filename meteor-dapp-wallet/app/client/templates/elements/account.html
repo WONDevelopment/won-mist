@@ -34,8 +34,7 @@
                 </ul>
             {{/with}}
 
-            <h3 class="{{ensClass}} {{isKycAddress}} tooltip">
-                <span class="tooltip-text">{{getKycLevel}}</span>
+            <h3 class="{{ensClass}} {{isKycAddress}}" title="{{getKycLevel}}">
                 {{#if isVulnerable}}
                     <span class="red">
                         <i class="icon-info"></i>
