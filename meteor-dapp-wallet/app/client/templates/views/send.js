@@ -520,6 +520,14 @@ Template['views_send'].helpers({
     amount = ~amount.indexOf('.') ? amount.replace(/\,/g, '') : amount;
 
     return amount.replace(/ /g, '');
+  },
+  /**
+    Get address type from address input template
+     */
+  isKycAddress: function() {
+    return TemplateVar.getFrom('.dapp-address-input .to', 'isNotKycAddress')
+      ? 'disabled-link'
+      : '';
   }
 });
 
@@ -614,13 +622,13 @@ Template['views_send'].events({
     if (selectedAccount && !TemplateVar.get('sending')) {
       // set gas down to 21 000, if its invalid data, to prevent high gas usage.
       if (estimatedGas === defaultEstimateGas || estimatedGas === 0)
-        estimatedGas = 22000;
+        estimatedGas = 210;
 
       // if its a wallet contract and tokens, don't need to remove the gas addition on send-all, as the owner pays
       if (sendAll && (selectedAccount.owners || tokenAddress !== 'won'))
         sendAll = false;
 
-      console.log('Providing gas: ', estimatedGas, sendAll ? '' : ' + 100000');
+      console.log('Providing gas: ', estimatedGas, sendAll ? '' : ' + 10000');
 
       if (TemplateVar.get('selectedAction') === 'deploy-contract' && !data)
         return GlobalNotification.warning({
@@ -829,7 +837,7 @@ Template['views_send'].events({
               estimatedGas: estimatedGas,
               estimatedGasPlusAddition: sendAll
                 ? estimatedGas
-                : estimatedGas + 100000, // increase the provided gas by 100k
+                : estimatedGas + 10000, // increase the provided gas by 10k
               data: data
             },
             ok: sendTransaction,

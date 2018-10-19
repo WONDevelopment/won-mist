@@ -179,7 +179,7 @@
 
         <!-- a button type="submit" will send the form -->
 
-        <button type="submit" class="dapp-block-button">
+        <button type="submit" class="dapp-block-button {{isKycAddress}}">
             {{#if TemplateVar.get "sending"}}
                 {{i18n 'buttons.sending'}}
             {{else}}
