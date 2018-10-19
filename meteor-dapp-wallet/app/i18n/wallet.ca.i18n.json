@@ -333,7 +333,7 @@
       "subTitle": "Tokens agegits",
       "admin": "__name__ (pàgina d'administració)",
       "description":
-        "Els tokens són monedes i altres fungibles construïts sobre la platforma d'Won. Per tal que tots els comptes puguin veure i enviar els tokens, necessites afegir la seva adreça a aquesta llista. Pots crear el teu propi token simplement modificant <a href=\"https://won.org/token#the-code\" target=\"_blank\">aquest exemple d'un contracte de token personalitzat</a> o aprenent-ne més sobre <a href=\"https://www.won.org/token\" target=\"_blank\">tokens d'Won</a>.",
+        "Els tokens són monedes i altres fungibles construïts sobre la platforma d'Won. Per tal que tots els comptes puguin veure i enviar els tokens, necessites afegir la seva adreça a aquesta llista. Pots crear el teu propi token simplement modificant <a href=\"https://ethereum.org/token#the-code\" target=\"_blank\">aquest exemple d'un contracte de token personalitzat</a> o aprenent-ne més sobre <a href=\"https://www.ethereum.org/token\" target=\"_blank\">tokens d'Won</a>.",
       "deleteToken":
         "Vols eliminar aquest token <strong>__token__</strong> de la teva llista?",
       "addedToken": "__token__ afegit a la teva llista de visualització",
@@ -364,7 +364,7 @@
       "pickContract": "Selecciona un contracte",
       "pickFunction": "Selecciona una funció",
       "noContract":
-        "<p>Posa la font del contracte que vulguis aquí. Pots trobar molts exemples de contracte a <a href=\"http://won.org\" target=\"_blank\">won.org</a>: </p> <ul><li><a href=\"http://won.org/token#the-code\" target=\"_blank\">Crear un token</a></li><li><a href=\"http://won.org/crowdsale#the-code\" target=\"_blank\">Començar una crowdsale</a></li><li><a href=\"http://won.org/dao#the-code\" target=\"_blank\">Crear una organització a la blockchain</a></li></ul>",
+        "<p>Posa la font del contracte que vulguis aquí. Pots trobar molts exemples de contracte a <a href=\"http://ethereum.org\" target=\"_blank\">ethereum.org</a>: </p> <ul><li><a href=\"http://ethereum.org/token#the-code\" target=\"_blank\">Crear un token</a></li><li><a href=\"http://ethereum.org/crowdsale#the-code\" target=\"_blank\">Començar una crowdsale</a></li><li><a href=\"http://ethereum.org/dao#the-code\" target=\"_blank\">Crear una organització a la blockchain</a></li></ul>",
       "buttons": {
         "showContractInfo": "Mostrar informació del contracte",
         "hideContractInfo": "Ocultar informació del contracte",

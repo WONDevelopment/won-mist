@@ -125,9 +125,9 @@
     "startScreen": {
       "runningNodeFound": "发现正在运行的WON节点！",
       "nodeConnectionTimeout":
-        "无法开启WON节点！<br><small>如果你已经<a href='https://www.won.org/cli#gwon' class='button' target='_blank'>安装Geth</a>，使用此命令运行： <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> 或者上报此问题 </a></small>",
+        "无法开启WON节点！<br><small>如果你已经<a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'>安装Geth</a>，使用此命令运行： <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> 或者上报此问题 </a></small>",
       "nodeBinaryNotFound":
-        "找不到WON节点安装文件！<br><small> <a href='https://www.won.org/cli#gwon' class='button' target='_blank'> 请事先手动开启一个节点 </a> </small>",
+        "找不到WON节点安装文件！<br><small> <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'> 请事先手动开启一个节点 </a> </small>",
       "nodeSyncing": "需要同步WON节点，请等待……",
       "nodeSyncInfo": "正在下载第__displayBlock__块，共__highestBlock__。",
       "nodeSyncConnecting": "正在查找节点……",

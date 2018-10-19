@@ -328,7 +328,7 @@
       "subTitle": "Hinzugefügte Token",
       "admin": "__name__ (Admin Seite)",
       "description":
-        "Token sind Währungen oder Tauschgegenstände, die auf der Won-Plattform aufsetzen. Damit ein Konto ein Token beobachten oder versenden kann, müssen Sie die Kontoadressen in die folgende Liste einfügen. Sie können Ihren eigenen Token erzeugen, in dem Sie z.B. folgendes <a href=\"https://won.org/token#the-code\" target=\"_blank\">Beispiel eines Token Vertrags</a> anpassen, oder mehr über <a href=\"https://www.won.org/token\" target=\"_blank\">Won Token</a> lernen.",
+        "Token sind Währungen oder Tauschgegenstände, die auf der Won-Plattform aufsetzen. Damit ein Konto ein Token beobachten oder versenden kann, müssen Sie die Kontoadressen in die folgende Liste einfügen. Sie können Ihren eigenen Token erzeugen, in dem Sie z.B. folgendes <a href=\"https://ethereum.org/token#the-code\" target=\"_blank\">Beispiel eines Token Vertrags</a> anpassen, oder mehr über <a href=\"https://www.ethereum.org/token\" target=\"_blank\">Won Token</a> lernen.",
       "deleteToken":
         "Möchten Sie den Token <strong>__token__</strong> von Ihrer Liste entfernen?",
       "addedToken": "__token__ wurde Ihrer Beobachtungsliste hinzugefügt",
@@ -359,7 +359,7 @@
       "pickContract": "Wähle einen Vertrag",
       "pickFunction": "Wähle eine Funktion",
       "noContract":
-        "<p>Fügen Sie den Quellcode eines Vertrags hier ein. Beispiele finden Sie unter <a href=\"http://won.org\" target=\"_blank\">won.org</a>: </p> <ul><li><a href=\"http://won.org/token#the-code\" target=\"_blank\">Token erzeugen</a></li><li><a href=\"http://won.org/crowdsale#the-code\" target=\"_blank\">Crowdsale starten</a></li><li><a href=\"http://won.org/dao#the-code\" target=\"_blank\">Blockchain-Organisation erzeugen</a></li></ul>",
+        "<p>Fügen Sie den Quellcode eines Vertrags hier ein. Beispiele finden Sie unter <a href=\"http://ethereum.org\" target=\"_blank\">ethereum.org</a>: </p> <ul><li><a href=\"http://ethereum.org/token#the-code\" target=\"_blank\">Token erzeugen</a></li><li><a href=\"http://ethereum.org/crowdsale#the-code\" target=\"_blank\">Crowdsale starten</a></li><li><a href=\"http://ethereum.org/dao#the-code\" target=\"_blank\">Blockchain-Organisation erzeugen</a></li></ul>",
       "buttons": {
         "showContractInfo": "Zeige Vertragsinformationen",
         "hideContractInfo": "Schließe Vertragsinformationen",

@@ -124,9 +124,9 @@
     "startScreen": {
       "runningNodeFound": "Fant kjørende Won-node!",
       "nodeConnectionTimeout":
-        "Kunne ikke starte Won-node!<br><small>Hvis du <a href='https://www.won.org/cli#gwon' class='button' target='_blank'>installerte Geth</a>, bruk denne kommandoen for å kjøre det: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Eller rapporter et problem </a></small>",
+        "Kunne ikke starte Won-node!<br><small>Hvis du <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'>installerte Geth</a>, bruk denne kommandoen for å kjøre det: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Eller rapporter et problem </a></small>",
       "nodeBinaryNotFound":
-        "Ingen Won-node kilde funnet!<br><small> <a href='https://www.won.org/cli#gwon' class='button' target='_blank'> Vennligst start en manuelt først. </a> </small>",
+        "Ingen Won-node kilde funnet!<br><small> <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'> Vennligst start en manuelt først. </a> </small>",
       "nodeStarting": "Won-node starter opp...",
       "nodeStarted": "Won-node startet",
       "nodeConnected": "Won-node tilkoblet",

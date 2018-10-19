@@ -125,9 +125,9 @@
     "startScreen": {
       "runningNodeFound": "起動している Won ノードを見つけました!",
       "nodeConnectionTimeout":
-        "Won ノードをスタート出来ませんでした!<br><small>もし<a href='https://www.won.org/cli#gwon' class='button' target='_blank'>Geth</a>をインストールしているならば,このコマンドを使ってみてください: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'>もしくは問題を報告して下さい。 </a></small>",
+        "Won ノードをスタート出来ませんでした!<br><small>もし<a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'>Geth</a>をインストールしているならば,このコマンドを使ってみてください: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'>もしくは問題を報告して下さい。 </a></small>",
       "nodeBinaryNotFound":
-        "Won ノードバイナリーが見つかりませんでした。<br><small> <a href='https://www.won.org/cli#gwon' class='button' target='_blank'> 手動でスタートして下さい。 </a> </small>",
+        "Won ノードバイナリーが見つかりませんでした。<br><small> <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'> 手動でスタートして下さい。 </a> </small>",
       "nodeSyncing": "Won ノードは同期中です...",
       "nodeSyncInfo":
         "ブロックをダウンロードしています。 __displayBlock__ / __highestBlock__.",

@@ -326,7 +326,7 @@
       "subTitle": "Ficha adicionada",
       "admin": "__name__ (administração)",
       "description":
-        "Fichas são moedas, fichas colecionáveis ou outros tokens fungíveis construídos na plataforma Won. Para que suas contas possam ver o seu saldo e enviar fichas, é necessário adicionar o endereço do token aqui. Você pode criar sua ficha modificando esse  <a href=\"https://won.org/token#the-code\" target=\"_blank\">exemplo de ficha</a>. Leia mais sobre isso no nosso tutorial <a href=\"https://www.won.org/token\" target=\"_blank\">como criar fichas no Won (em inglês)</a>.",
+        "Fichas são moedas, fichas colecionáveis ou outros tokens fungíveis construídos na plataforma Won. Para que suas contas possam ver o seu saldo e enviar fichas, é necessário adicionar o endereço do token aqui. Você pode criar sua ficha modificando esse  <a href=\"https://ethereum.org/token#the-code\" target=\"_blank\">exemplo de ficha</a>. Leia mais sobre isso no nosso tutorial <a href=\"https://www.ethereum.org/token\" target=\"_blank\">como criar fichas no Won (em inglês)</a>.",
       "deleteToken":
         "Você quer parar de observar a ficha <strong>__token__</strong>?",
       "addedToken": "Ficha __token__ adicinada na sua lista",
@@ -357,7 +357,7 @@
       "pickContract": "Escolha um contrato",
       "pickFunction": "Escolha uma função",
       "noContract":
-        "<p>Escreva aqui o código do contrato desejado. Você pode encontrar exemplos de diversos contratos em <a href=\"http://won.org\" target=\"_blank\">won.org</a>: </p> <ul><li><a href=\"http://won.org/token#the-code\" target=\"_blank\">Emitir uma moeda</a></li><li><a href=\"http://won.org/crowdsale#the-code\" target=\"_blank\">Começe um financiamento coletivo</a></li><li><a href=\"http://won.org/dao#the-code\" target=\"_blank\">Crie sua empresa no blockchain</a></li></ul>",
+        "<p>Escreva aqui o código do contrato desejado. Você pode encontrar exemplos de diversos contratos em <a href=\"http://ethereum.org\" target=\"_blank\">ethereum.org</a>: </p> <ul><li><a href=\"http://ethereum.org/token#the-code\" target=\"_blank\">Emitir uma moeda</a></li><li><a href=\"http://ethereum.org/crowdsale#the-code\" target=\"_blank\">Começe um financiamento coletivo</a></li><li><a href=\"http://ethereum.org/dao#the-code\" target=\"_blank\">Crie sua empresa no blockchain</a></li></ul>",
       "buttons": {
         "showContractInfo": "Mostrar informação do contrato",
         "hideContractInfo": "Esconder informação do contrato",

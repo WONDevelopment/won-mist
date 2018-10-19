@@ -321,7 +321,7 @@
       "subTitle": "Jetons ajoutés",
       "admin": "__name__ (page d'administration)",
       "description":
-        "Les jetons sont des devises et autres fongibles construits sur la plateforme Won. Pour que les comptes puissent voir et envoyer des jetons, vous devez ajouter l'adresse de leur contrat à cette liste. Vous pouvez créer votre propre jeton simplement en modifiant <a href=\"https://won.org/token#the-code\" target=\"_blank\">cet exemple d'un contrat de jeton</a> ou en en apprenant plus sur <a href=\"https://www.Won.org/token\" target=\"_blank\">les jetons dans Won</a>.",
+        "Les jetons sont des devises et autres fongibles construits sur la plateforme Won. Pour que les comptes puissent voir et envoyer des jetons, vous devez ajouter l'adresse de leur contrat à cette liste. Vous pouvez créer votre propre jeton simplement en modifiant <a href=\"https://ethereum.org/token#the-code\" target=\"_blank\">cet exemple d'un contrat de jeton</a> ou en en apprenant plus sur <a href=\"https://www.ethereum.org/token\" target=\"_blank\">les jetons dans Won</a>.",
       "deleteToken":
         "Voulez-vous supprimer le jeton <strong>__token__</strong> de votre liste ?",
       "addedToken": "__token__ ajouté à votre liste",
@@ -352,7 +352,7 @@
       "pickContract": "Choisir un contrat",
       "pickFunction": "Choisir une fonction",
       "noContract":
-        "<p>Placez la source du contrat désiré ici. Vous trouverez de nombreux exemples de contrats sur <a href=\"http://Won.org\" target=\"_blank\">Won.org</a> : </p> <ul><li><a href=\"http://Won.org/token#the-code\" target=\"_blank\">Créer un jeton</a></li><li><a href=\"http://Won.org/crowdsale#the-code\" target=\"_blank\">Démarrer une crowdsale</a></li><li><a href=\"http://Won.org/dao#the-code\" target=\"_blank\">Créer une organisation sur la blockchain</a></li></ul>",
+        "<p>Placez la source du contrat désiré ici. Vous trouverez de nombreux exemples de contrats sur <a href=\"http://ethereum.org\" target=\"_blank\">ethereum.org</a> : </p> <ul><li><a href=\"http://ethereum.org/token#the-code\" target=\"_blank\">Créer un jeton</a></li><li><a href=\"http://ethereum.org/crowdsale#the-code\" target=\"_blank\">Démarrer une crowdsale</a></li><li><a href=\"http://ethereum.org/dao#the-code\" target=\"_blank\">Créer une organisation sur la blockchain</a></li></ul>",
       "buttons": {
         "showContractInfo": "Afficher les infos du contrat",
         "hideContractInfo": "Masquer les infos du contrat",

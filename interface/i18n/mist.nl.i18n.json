@@ -143,9 +143,9 @@
     "startScreen": {
       "runningNodeFound": "Lopende Won node gevonden!",
       "nodeConnectionTimeout":
-        "Won node opstarten niet mogelijk!<br><small>Als je <a href='https://www.won.org/cli#gwon' class='button' target='_blank'>Geth geinstalleerd hebt</a>, gebruik dan dit commando om het op te starten: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Of meld een fout </a></small>",
+        "Won node opstarten niet mogelijk!<br><small>Als je <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'>Geth geinstalleerd hebt</a>, gebruik dan dit commando om het op te starten: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Of meld een fout </a></small>",
       "nodeBinaryNotFound":
-        "Geen Won node gevonden!<br><small> <a href='https://www.won.org/cli#gwon' class='button' target='_blank'> Start er a.u.b. handmatig een. </a> </small>",
+        "Geen Won node gevonden!<br><small> <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'> Start er a.u.b. handmatig een. </a> </small>",
       "nodeStarting": "Won node opstarten...",
       "nodeStarted": "Won node gestart",
       "nodeConnected": "Won node verbonden",

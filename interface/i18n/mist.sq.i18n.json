@@ -132,9 +132,9 @@
     "startScreen": {
       "runningNodeFound": "U gjet nyje Won në punë!",
       "nodeConnectionTimeout":
-        "Nuk mund të niset nyje Won!<br><small>Nëse ju <a href='https://www.won.org/cli#gwon' class='button' target='_blank'>instaluat Geth</a>, përdorni këtë komandë ta krijoni: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Ose raportoni një problem </a></small>",
+        "Nuk mund të niset nyje Won!<br><small>Nëse ju <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'>instaluat Geth</a>, përdorni këtë komandë ta krijoni: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Ose raportoni një problem </a></small>",
       "nodeBinaryNotFound":
-        "Nuk u gjet nyje binare Won!<br><small> <a href='https://www.won.org/cli#gwon' class='button' target='_blank'> Ju lutemi krijoni një manualisht më parë. </a> </small>",
+        "Nuk u gjet nyje binare Won!<br><small> <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'> Ju lutemi krijoni një manualisht më parë. </a> </small>",
       "nodeStarting": "Nyja Won po niset...",
       "nodeStarted": "Nyja Won u nis",
       "nodeConnected": "Nyja Won u lidh",

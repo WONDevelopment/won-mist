@@ -311,7 +311,7 @@
       "subTitle": "新增 代币",
       "admin": "__name__ (管理页面)",
       "description":
-        "代币 是货币或者是其他基于WON平台的货币等价物。您需要添加代币地址到此列表，以便查看和发送代币 。您可以修改 <a href=\"https://won.org/token#the-code\" target=\"_blank\">定制化代币的合约规范</a> 以创建定制化的代币，或者查看 <a href=\"https://www.won.org/token\" target=\"_blank\">Won Tokens</a> 进行深入学习。",
+        "代币 是货币或者是其他基于WON平台的货币等价物。您需要添加代币地址到此列表，以便查看和发送代币 。您可以修改 <a href=\"https://ethereum.org/token#the-code\" target=\"_blank\">定制化代币的合约规范</a> 以创建定制化的代币，或者查看 <a href=\"https://www.ethereum.org/token\" target=\"_blank\">Ethereum Tokens</a> 进行深入学习。",
       "deleteToken":
         "您確定要从列表中移除 代币么 <strong>__token__</strong> ？",
       "addedToken": "添加 __token__ 至您的查看列表",
@@ -342,7 +342,7 @@
       "pickContract": "选择合约",
       "pickFunction": "选择函数",
       "noContract":
-        "<p>在这里填入合约源码。您可以在下列连接中找到合约的范例 <a href=\"http://won.org\" target=\"_blank\">won.org</a>： </p> <ul><li><a href=\"http://won.org/token#the-code\" target=\"_blank\">建立 代币</a></li><li><a href=\"http://won.org/crowdsale#the-code\" target=\"_blank\">启动众筹</a></li><li><a href=\"http://won.org/dao#the-code\" target=\"_blank\">创建区块链组织</a></li></ul>",
+        "<p>在这里填入合约源码。您可以在下列连接中找到合约的范例 <a href=\"http://ethereum.org\" target=\"_blank\">ethereum.org</a>： </p> <ul><li><a href=\"http://ethereum.org/token#the-code\" target=\"_blank\">建立 代币</a></li><li><a href=\"http://ethereum.org/crowdsale#the-code\" target=\"_blank\">启动众筹</a></li><li><a href=\"http://ethereum.org/dao#the-code\" target=\"_blank\">创建区块链组织</a></li></ul>",
       "buttons": {
         "showContractInfo": "显示合约信息",
         "hideContractInfo": "隐藏合约信息",

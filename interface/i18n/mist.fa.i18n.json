@@ -125,9 +125,9 @@
     "startScreen": {
       "runningNodeFound": "Found running Won node!",
       "nodeConnectionTimeout":
-        "Couldn't start Won node!<br><small>If you <a href='https://www.won.org/cli#gwon' class='button' target='_blank'>installed Geth</a>, use this command to run it: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Or report an issue </a></small>",
+        "Couldn't start Won node!<br><small>If you <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'>installed Geth</a>, use this command to run it: <br> <code>gwon --ipcpath __path__</code></small><br> <small><a href='https://github.com/won/mist/issues' class='button' target='_blank'> Or report an issue </a></small>",
       "nodeBinaryNotFound":
-        "No Won node binary found!<br><small> <a href='https://www.won.org/cli#gwon' class='button' target='_blank'> Please start one manually before. </a> </small>",
+        "No Won node binary found!<br><small> <a href='https://www.ethereum.org/cli#gwon' class='button' target='_blank'> Please start one manually before. </a> </small>",
       "nodeStarting": "Won node starting up...",
       "nodeStarted": "Won node started",
       "nodeConnected": "Won node connected",

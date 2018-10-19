@@ -348,7 +348,7 @@
       "pickContract": "Alege un contract",
       "pickFunction": "Alege o functie",
       "noContract":
-        "<p>Pune aici codul sursa al contractului dorit. Poti gasi mai multe exemple de cotracte aici: <a href=\"http://won.org\" target=\"_blank\">won.org</a>: </p> <ul><li><a href=\"http://won.org/token#the-code\" target=\"_blank\">Implementeaza un token</a></li><li><a href=\"http://won.org/crowdsale#the-code\" target=\"_blank\">Lanseaza o campanie pentru strangere de fonduri</a></li><li><a href=\"http://won.org/dao#the-code\" target=\"_blank\">Implementeaza o organizatie bazata pe blockchain</a></li></ul>",
+        "<p>Pune aici codul sursa al contractului dorit. Poti gasi mai multe exemple de cotracte aici: <a href=\"http://ethereum.org\" target=\"_blank\">ethereum.org</a>: </p> <ul><li><a href=\"http://ethereum.org/token#the-code\" target=\"_blank\">Implementeaza un token</a></li><li><a href=\"http://ethereum.org/crowdsale#the-code\" target=\"_blank\">Lanseaza o campanie pentru strangere de fonduri</a></li><li><a href=\"http://ethereum.org/dao#the-code\" target=\"_blank\">Implementeaza o organizatie bazata pe blockchain</a></li></ul>",
       "buttons": {
         "showContractInfo": "Arata informatii despre contract",
         "hideContractInfo": "Ascunde informatii despre contract",
