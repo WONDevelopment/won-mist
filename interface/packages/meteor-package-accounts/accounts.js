@@ -118,11 +118,8 @@ EthAccounts._addAccounts = function() {
               balance = balance.toFixed();
             }
 
-            web3.won.getCoinbase(function(error, coinbase) {
-              if (error) {
-                console.warn('getCoinbase error: ', error);
-                coinbase = null; // continue with null coinbase
-              }
+            web3.won.getCoinbase().then(coinbase => {
+              console.info('========', coinbase);
 
               var doc = EthAccounts.findAll({
                 address: address
@@ -134,7 +131,7 @@ EthAccounts._addAccounts = function() {
                 balance: balance,
                 name:
                   address === coinbase
-                    ? 'Main account (Etherbase)'
+                    ? 'Main account (Wonbase)'
                     : 'Account ' + accountsCount
               };
 
