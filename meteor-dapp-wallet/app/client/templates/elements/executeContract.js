@@ -313,6 +313,15 @@ Template['elements_executeContract_function'].events({
         .apply(null, inputs)
         .encodeABI()
     );
+
+    if (e.currentTarget.name === 'dst') {
+      TemplateVar.set(
+        'isKycAddress',
+        TemplateVar.getFrom(e.currentTarget, 'isNotKycAddress')
+          ? 'disabled-link'
+          : ''
+      );
+    }
   },
   /**
     Executes a transaction on contract

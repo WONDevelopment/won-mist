@@ -115,7 +115,7 @@
     <input type="number" min="0" name="amount" placeholder="0" step="0.001">
     {{/if}}
 
-    <button class="dapp-block-button execute">
+    <button class="dapp-block-button execute {{TemplateVar.get 'isKycAddress'}}">
         {{#if TemplateVar.get "sending"}} 
             {{i18n 'buttons.sending'}}
         {{else}}
