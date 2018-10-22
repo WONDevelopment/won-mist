@@ -14,7 +14,7 @@ var setWindowSize = function(template) {
   });
 };
 
-var defaultEstimateGas = 2100;
+var defaultEstimateGas = 210000;
 
 /**
 The sendTransaction confirmation popup window template
