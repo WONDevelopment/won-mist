@@ -320,6 +320,16 @@ let menuTempl = function(webviews) {
           }
         ]
       },
+      {
+          type: 'separator'
+      },
+      {
+          label: i18n.t('mist.applicationMenu.file.openExtWallet'),
+          accelerator: 'Shift+CommandOrControl+E',
+          click() {
+              Windows.createPopup('openExternalWallet'); //
+          }
+      },
       ...swarmUpload
     ]
   });

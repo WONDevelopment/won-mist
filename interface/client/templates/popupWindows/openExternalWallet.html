@@ -1,0 +1,60 @@
+<template name="popupWindows_openExternalWallet">
+    <div class="main-content openExternalWallet">
+        <form action="#">
+        {{#if (TemplateVar.get "inputPassword")}}
+            <h1><strong>{{i18n "mist.popupWindows.openExternalWallet.openTheWallet"}}</strong></h1>
+            <h3>{{TemplateVar.get "wallet-url"}}</h3>
+            <div class="pin-container">
+                <div class="tips">
+                    <br>
+                    <span class="head">Look at the device for number positions:</span>
+                    <div>
+                        <span>7&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;9</span><br>
+                        <span>4&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;6</span><br>
+                        <span>1&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;3</span><br>
+                    </div>
+                </div>
+                <div class="input-password">
+                    <div>
+                        <input type="{{showPassword}}" placeholder="{{i18n 'mist.popupWindows.openExternalWallet.enterPIN'}}" class="password">
+                    </div>
+                    {{#if (TemplateVar.get "errMsg")}}
+                        <span class="">{{TemplateVar.get "errMsg"}}</span>
+                    {{else}}
+                        <br>
+                    {{/if}}
+                    <div>
+                        <input type="checkbox" name="elements_input_bool" class="show-password abi-input">
+                        <label for="show-password">{{i18n "mist.popupWindows.importAccount.buttons.showPassword"}}</label>
+                    </div>
+                </div>
+            </div>
+
+
+        {{else}}
+            <h1><strong>{{i18n "mist.popupWindows.openExternalWallet.selectAWallet"}}</strong></h1>
+            <ul class="dapp-account-list">
+                <li>
+                    {{#each (TemplateVar.get "wallets")}}
+                    <button>
+                        <span>{{url}}</span>
+                        <small>{{status}}</small>
+                    </button>
+                    {{else}}
+                    <span class="no-wallet">
+                            {{i18n "mist.popupWindows.openExternalWallet.noExternalWallet"}}
+                        </span>
+                    {{/each}}
+                </li>
+            </ul>
+        {{/if}}
+        <div class="dapp-modal-buttons">
+            <button class="cancel" type="button">{{i18n "buttons.cancel"}}</button>
+            {{#if (TemplateVar.get "inputPassword") }}
+                <button class="back dapp-primary-button" type="button">{{i18n "buttons.back"}}</button>
+                <button class="ok dapp-primary-button" type="submit">{{i18n "buttons.ok"}}</button>
+            {{/if}}
+        </div>
+        </form>
+    </div>
+</template>

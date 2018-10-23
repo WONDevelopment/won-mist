@@ -446,6 +446,15 @@ class Windows {
             alwaysOnTop: true
           }
         };
+      case 'openExternalWallet':
+        return {
+          electronOptions: {
+            width: 600,
+            height: 300,
+            center: true,
+            alwaysOnTop: true
+          }
+        };
       case 'requestAccount':
         return {
           electronOptions: {
