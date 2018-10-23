@@ -37501,6 +37501,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           call: 'personal_ecRecover',
           params: 2,
           inputFormatter: [formatters.inputSignFormatter, null]
+        }), new Method({
+          name: 'getListWallets',
+          call: 'personal_listWallets',
+          params: 0
+        }), new Method({
+          name: 'openWallet',
+          call: 'personal_openWallet',
+          params: 2
         })];
         methods.forEach(function (method) {
           method.attachToObject(_this);
