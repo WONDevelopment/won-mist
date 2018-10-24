@@ -76,7 +76,7 @@ EthAccounts.updateAll({address: "0x990ccf8a0de58091c028d6ff76bb235ee67c1c39"}, {
 
 ```js
 EthAccounts.updateAll(
-  { address: '0x990ccf8a0de58091c028d6ff76bb235ee67c1c39' },
-  { $unset: { deactivated: '' } }
+  { address: "0x990ccf8a0de58091c028d6ff76bb235ee67c1c39" },
+  { $unset: { deactivated: "" } }
 );
 ```

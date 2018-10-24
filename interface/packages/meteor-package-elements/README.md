@@ -16,8 +16,8 @@ The following elements can be use anywhere in your dapp.
 
 Additionally this package exposes the following packages:
 
-- [ethereum:tools](https://atmospherejs.com/ethereum/tools), which gives you `EthTools`.
-- [frozeman:template-var](https://atmospherejs.com/frozeman/template-var), which gives you the `TemplateVar.set()/.get()` functions which can be used to get values from the select account, or address input element.
+* [ethereum:tools](https://atmospherejs.com/ethereum/tools), which gives you `EthTools`.
+* [frozeman:template-var](https://atmospherejs.com/frozeman/template-var), which gives you the `TemplateVar.set()/.get()` functions which can be used to get values from the select account, or address input element.
 
 Note that these packages will only be exposed to your client part of your dapp,
 if you want to use e.g. `EthTools` on the server side add the package manually using `$ meteor add ethereum:tools`.
@@ -66,8 +66,8 @@ By passing `class="dapp-large"` you can have a larger version of the input:
 
 Additional Properties are:
 
-- `autofocus="true"`
-- `disabled="true"`
+* `autofocus="true"`
+* `disabled="true"`
 
 **Getting values reactively**
 
@@ -109,8 +109,8 @@ By passing `class="dapp-large"` you can have a larger version of the input:
 
 Additional Properties are:
 
-- `autofocus="true"`
-- `disabled="true"`
+* `autofocus="true"`
+* `disabled="true"`
 
 **Getting values reactively**
 
@@ -140,15 +140,15 @@ Creates a select, which can allow to select accounts. The provided array needs t
 ```js
 var myAccounts = [
   {
-    type: 'account',
-    name: 'My Account 1',
-    balance: '1000000000000000000', // in wei
-    address: '0x922a519ac926f69856fcfc1b2b8b846cfb3f6b4e'
+    type: "account",
+    name: "My Account 1",
+    balance: "1000000000000000000", // in wei
+    address: "0x922a519ac926f69856fcfc1b2b8b846cfb3f6b4e"
   },
   {
-    name: 'My Other Address',
-    balance: '324567543200000013456', // in wei
-    address: '0x1f93d965f60faee1085a93e99562945c1bd97be0'
+    name: "My Other Address",
+    balance: "324567543200000013456", // in wei
+    address: "0x1f93d965f60faee1085a93e99562945c1bd97be0"
   }
 ];
 ```
@@ -204,7 +204,7 @@ The user then can adjust the fee up and down by a factor of ~1.8.
 _Hint_: To get the gas price reactivly you can use the [ethereum:blocks](https://atmospherejs.com/ethereum/blocks) package's `EthBlocks.latest.gasPrice` and pass it to the `gasPrice` property.
 
 ```html
-{{> dapp_selectGasPrice gas=21000 gasPrice=50000000000 unit="won"}}
+{{> dapp_selectGasPrice gas=21000 gasPrice=50000000000 unit="ether"}}
 ```
 
 _Note_: If you don't set the `unit` property it will use `EthTools.getUnit()`, like the `{{> dapp_formatBalance}}` element.
@@ -220,7 +220,7 @@ TemplateVar.getFrom('.my-container-element .dapp-select-gas-price', 'gasPrice');
 // or the total fee when providing a estimated gas usage of 21000
 
 TemplateVar.getFrom('.my-container-element .dapp-select-gas-price', 'gasInWei');
-// "1181427240063000" which is "0.001181427240063" won
+// "1181427240063000" which is "0.001181427240063" ether
 
 // or when used in an event
 'change .dapp-select-gas-price input': function(e) {
@@ -250,27 +250,27 @@ Just place a modal placeholder before the closing body tag.
 Render the modal:
 
 ```js
-EthElements.Modal.show('myContentTemplate');
+EthElements.Modal.show("myContentTemplate");
 
 // Or
 
 EthElements.Modal.show({
-  template: 'myContentTemplate',
+  template: "myContentTemplate",
   data: {
-    myData: 'some data'
+    myData: "some data"
   }
 });
 ```
 
 Additional options:
 
-- `closeable` - Prevents the default behaviour, which closes the modal when the overlay is clicked.
-- `class` - A class, which will be add to the modal section element
+* `closeable` - Prevents the default behaviour, which closes the modal when the overlay is clicked.
+* `class` - A class, which will be add to the modal section element
 
 ```js
-EthElements.Modal.show('myContentTemplate', {
+EthElements.Modal.show("myContentTemplate", {
   closeable: false,
-  class: 'my-modal-class'
+  class: "my-modal-class"
 });
 ```
 
@@ -278,7 +278,7 @@ Navigate to a path on close.
 This will only work when the [kadira:flow-router](https://atmospherejs.com/kadira/flow-router) or [iron:router](https://atmospherejs.com/iron/router) package is installed:
 
 ```js
-EthElements.Modal.show('myContentTemplate', { closePath: '/dashboard' });
+EthElements.Modal.show("myContentTemplate", { closePath: "/dashboard" });
 ```
 
 #### Close modal
@@ -299,12 +299,12 @@ You basically just can pass a `text`, `ok` and/or `cancel` property as a data co
 
 Additional you can:
 
-- Set the `ok` or `cancel` property to `true`, it will just close the modal without any action.
-- Pass `false` or leave the `ok` or `cancel` property empty and it won't show that buttons.
+* Set the `ok` or `cancel` property to `true`, it will just close the modal without any action.
+* Pass `false` or leave the `ok` or `cancel` property empty and it won't show that buttons.
 
 ```js
 EthElements.Modal.question({
-  text: 'Do you want to ...',
+  text: "Do you want to ...",
   ok: function() {
     // do something on ok
   },
@@ -318,9 +318,9 @@ Instead of passing a text you can also pass a template, which will be shown abov
 
 ```js
 EthElements.Modal.question({
-  template: 'myTemplate',
+  template: "myTemplate",
   data: {
-    my: 'template data'
+    my: "template data"
   },
   ok: function() {
     // do something on ok
@@ -342,7 +342,7 @@ Additional you can pass the same options as the modal as the second parameter:
 ```js
 EthElements.Modal.question(
   {
-    text: 'Alright?',
+    text: "Alright?",
     ok: function() {
       // do something on ok
     }

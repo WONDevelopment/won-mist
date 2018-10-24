@@ -25,7 +25,7 @@
  */
 
 (function(window) {
-  'use strict'; // strict will be optimized on engines (https://developer.mozilla.org/en/JavaScript/Strict_mode)
+  "use strict"; // strict will be optimized on engines (https://developer.mozilla.org/en/JavaScript/Strict_mode)
 
   var _src = null,
     _dest = null,
@@ -45,8 +45,8 @@
     var g = (c & 0x00ff00) >> 8;
     var b = c & 0x0000ff;
     return (
-      /*y=*/ (((0.299 * r + 0.587 * g + 0.114 * b) | 0) << 16) +
-      /*u=*/ (((-0.169 * r - 0.331 * g + 0.5 * b + 128) | 0) << 8) +
+      (/*y=*/ ((0.299 * r + 0.587 * g + 0.114 * b) | 0) << 16) +
+      (/*u=*/ ((-0.169 * r - 0.331 * g + 0.5 * b + 128) | 0) << 8) +
       /*v=*/ ((0.5 * r - 0.419 * g - 0.081 * b + 128) | 0)
     );
   };
@@ -190,10 +190,10 @@
     var uc = attr.charAt(0).toUpperCase() + attr.substr(1);
     return (
       el[attr] ||
-      el['ms' + uc] ||
-      el['moz' + uc] ||
-      el['webkit' + uc] ||
-      el['o' + uc]
+      el["ms" + uc] ||
+      el["moz" + uc] ||
+      el["webkit" + uc] ||
+      el["o" + uc]
     );
   };
 
@@ -201,11 +201,11 @@
   // pixels from an image. The naive method recently failed on retina
   // devices with a backgingStoreRatio != 1
   var getImagePixels = function(image, x, y, width, height) {
-    var canvas = document.createElement('canvas');
-    var ctx = canvas.getContext('2d');
+    var canvas = document.createElement("canvas");
+    var ctx = canvas.getContext("2d");
 
-    var ratio = getVendorAttribute(ctx, 'backingStorePixelRatio') || 1;
-    ctx.getImageDataHD = getVendorAttribute(ctx, 'getImageDataHD');
+    var ratio = getVendorAttribute(ctx, "backingStorePixelRatio") || 1;
+    ctx.getImageDataHD = getVendorAttribute(ctx, "getImageDataHD");
 
     var realWidth = image.width / ratio,
       realHeight = image.height / ratio;
@@ -229,12 +229,12 @@
     var orig, origCtx, scaled, origPixels;
     if (img instanceof HTMLCanvasElement) {
       orig = img;
-      origCtx = orig.getContext('2d');
+      origCtx = orig.getContext("2d");
       scaled = orig;
       origPixels = origCtx.getImageData(0, 0, orig.width, orig.height).data;
     } else {
       origPixels = getImagePixels(img, 0, 0, img.width, img.height).data;
-      scaled = document.createElement('canvas');
+      scaled = document.createElement("canvas");
     }
 
     // pack RGBA colors into integers
@@ -259,7 +259,7 @@
     scaled.width = img.width * scale;
     scaled.height = img.height * scale;
 
-    var scaledCtx = scaled.getContext('2d');
+    var scaledCtx = scaled.getContext("2d");
     var scaledPixels = scaledCtx.getImageData(
       0,
       0,

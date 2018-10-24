@@ -5,16 +5,16 @@ Template Controllers
 */
 
 var sha3 = function(str, opt) {
-  return '0x' + web3.utils.sha3(str, opt).replace('0x', '');
+  return "0x" + web3.utils.sha3(str, opt).replace("0x", "");
 };
 
 function namehash(name) {
   var node =
-    '0x0000000000000000000000000000000000000000000000000000000000000000';
-  if (name != '') {
-    var labels = name.split('.');
+    "0x0000000000000000000000000000000000000000000000000000000000000000";
+  if (name != "") {
+    var labels = name.split(".");
     for (var i = labels.length - 1; i >= 0; i--) {
-      node = sha3(node + sha3(labels[i]).slice(2), { encoding: 'hex' });
+      node = sha3(node + sha3(labels[i]).slice(2), { encoding: "hex" });
     }
   }
   return node.toString();
@@ -23,281 +23,281 @@ function namehash(name) {
 var ensContractAbi = [
   {
     constant: true,
-    inputs: [{ name: 'node', type: 'bytes32' }],
-    name: 'resolver',
-    outputs: [{ name: '', type: 'address' }],
+    inputs: [{ name: "node", type: "bytes32" }],
+    name: "resolver",
+    outputs: [{ name: "", type: "address" }],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: true,
-    inputs: [{ name: 'node', type: 'bytes32' }],
-    name: 'owner',
-    outputs: [{ name: '', type: 'address' }],
+    inputs: [{ name: "node", type: "bytes32" }],
+    name: "owner",
+    outputs: [{ name: "", type: "address" }],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'label', type: 'bytes32' },
-      { name: 'owner', type: 'address' }
+      { name: "node", type: "bytes32" },
+      { name: "label", type: "bytes32" },
+      { name: "owner", type: "address" }
     ],
-    name: 'setSubnodeOwner',
+    name: "setSubnodeOwner",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'ttl', type: 'uint64' }
+      { name: "node", type: "bytes32" },
+      { name: "ttl", type: "uint64" }
     ],
-    name: 'setTTL',
+    name: "setTTL",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: true,
-    inputs: [{ name: 'node', type: 'bytes32' }],
-    name: 'ttl',
-    outputs: [{ name: '', type: 'uint64' }],
+    inputs: [{ name: "node", type: "bytes32" }],
+    name: "ttl",
+    outputs: [{ name: "", type: "uint64" }],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'resolver', type: 'address' }
+      { name: "node", type: "bytes32" },
+      { name: "resolver", type: "address" }
     ],
-    name: 'setResolver',
+    name: "setResolver",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'owner', type: 'address' }
+      { name: "node", type: "bytes32" },
+      { name: "owner", type: "address" }
     ],
-    name: 'setOwner',
+    name: "setOwner",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: false, name: 'owner', type: 'address' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: false, name: "owner", type: "address" }
     ],
-    name: 'Transfer',
-    type: 'event'
+    name: "Transfer",
+    type: "event"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: true, name: 'label', type: 'bytes32' },
-      { indexed: false, name: 'owner', type: 'address' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: true, name: "label", type: "bytes32" },
+      { indexed: false, name: "owner", type: "address" }
     ],
-    name: 'NewOwner',
-    type: 'event'
+    name: "NewOwner",
+    type: "event"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: false, name: 'resolver', type: 'address' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: false, name: "resolver", type: "address" }
     ],
-    name: 'NewResolver',
-    type: 'event'
+    name: "NewResolver",
+    type: "event"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: false, name: 'ttl', type: 'uint64' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: false, name: "ttl", type: "uint64" }
     ],
-    name: 'NewTTL',
-    type: 'event'
+    name: "NewTTL",
+    type: "event"
   }
 ];
 
 var resolverContractAbi = [
   {
     constant: true,
-    inputs: [{ name: 'interfaceID', type: 'bytes4' }],
-    name: 'supportsInterface',
-    outputs: [{ name: '', type: 'bool' }],
+    inputs: [{ name: "interfaceID", type: "bytes4" }],
+    name: "supportsInterface",
+    outputs: [{ name: "", type: "bool" }],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: true,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'contentTypes', type: 'uint256' }
+      { name: "node", type: "bytes32" },
+      { name: "contentTypes", type: "uint256" }
     ],
-    name: 'ABI',
+    name: "ABI",
     outputs: [
-      { name: 'contentType', type: 'uint256' },
-      { name: 'data', type: 'bytes' }
+      { name: "contentType", type: "uint256" },
+      { name: "data", type: "bytes" }
     ],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'x', type: 'bytes32' },
-      { name: 'y', type: 'bytes32' }
+      { name: "node", type: "bytes32" },
+      { name: "x", type: "bytes32" },
+      { name: "y", type: "bytes32" }
     ],
-    name: 'setPubkey',
+    name: "setPubkey",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: true,
-    inputs: [{ name: 'node', type: 'bytes32' }],
-    name: 'content',
-    outputs: [{ name: 'ret', type: 'bytes32' }],
+    inputs: [{ name: "node", type: "bytes32" }],
+    name: "content",
+    outputs: [{ name: "ret", type: "bytes32" }],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: true,
-    inputs: [{ name: 'node', type: 'bytes32' }],
-    name: 'addr',
-    outputs: [{ name: 'ret', type: 'address' }],
+    inputs: [{ name: "node", type: "bytes32" }],
+    name: "addr",
+    outputs: [{ name: "ret", type: "address" }],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'contentType', type: 'uint256' },
-      { name: 'data', type: 'bytes' }
+      { name: "node", type: "bytes32" },
+      { name: "contentType", type: "uint256" },
+      { name: "data", type: "bytes" }
     ],
-    name: 'setABI',
+    name: "setABI",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: true,
-    inputs: [{ name: 'node', type: 'bytes32' }],
-    name: 'name',
-    outputs: [{ name: 'ret', type: 'string' }],
+    inputs: [{ name: "node", type: "bytes32" }],
+    name: "name",
+    outputs: [{ name: "ret", type: "string" }],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'name', type: 'string' }
+      { name: "node", type: "bytes32" },
+      { name: "name", type: "string" }
     ],
-    name: 'setName',
+    name: "setName",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'hash', type: 'bytes32' }
+      { name: "node", type: "bytes32" },
+      { name: "hash", type: "bytes32" }
     ],
-    name: 'setContent',
+    name: "setContent",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: true,
-    inputs: [{ name: 'node', type: 'bytes32' }],
-    name: 'pubkey',
-    outputs: [{ name: 'x', type: 'bytes32' }, { name: 'y', type: 'bytes32' }],
+    inputs: [{ name: "node", type: "bytes32" }],
+    name: "pubkey",
+    outputs: [{ name: "x", type: "bytes32" }, { name: "y", type: "bytes32" }],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
     constant: false,
     inputs: [
-      { name: 'node', type: 'bytes32' },
-      { name: 'addr', type: 'address' }
+      { name: "node", type: "bytes32" },
+      { name: "addr", type: "address" }
     ],
-    name: 'setAddr',
+    name: "setAddr",
     outputs: [],
     payable: false,
-    type: 'function'
+    type: "function"
   },
   {
-    inputs: [{ name: 'ensAddr', type: 'address' }],
+    inputs: [{ name: "ensAddr", type: "address" }],
     payable: false,
-    type: 'constructor'
+    type: "constructor"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: false, name: 'a', type: 'address' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: false, name: "a", type: "address" }
     ],
-    name: 'AddrChanged',
-    type: 'event'
+    name: "AddrChanged",
+    type: "event"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: false, name: 'hash', type: 'bytes32' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: false, name: "hash", type: "bytes32" }
     ],
-    name: 'ContentChanged',
-    type: 'event'
+    name: "ContentChanged",
+    type: "event"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: false, name: 'name', type: 'string' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: false, name: "name", type: "string" }
     ],
-    name: 'NameChanged',
-    type: 'event'
+    name: "NameChanged",
+    type: "event"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: true, name: 'contentType', type: 'uint256' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: true, name: "contentType", type: "uint256" }
     ],
-    name: 'ABIChanged',
-    type: 'event'
+    name: "ABIChanged",
+    type: "event"
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: true, name: 'node', type: 'bytes32' },
-      { indexed: false, name: 'x', type: 'bytes32' },
-      { indexed: false, name: 'y', type: 'bytes32' }
+      { indexed: true, name: "node", type: "bytes32" },
+      { indexed: false, name: "x", type: "bytes32" },
+      { indexed: false, name: "y", type: "bytes32" }
     ],
-    name: 'PubkeyChanged',
-    type: 'event'
+    name: "PubkeyChanged",
+    type: "event"
   }
 ];
 
-var ensAddress = '0x314159265dd8dbb310642f98f50c066173c1259b';
+var ensAddress = "0x314159265dd8dbb310642f98f50c066173c1259b";
 
 function getAddr(name, ens, template, callback) {
-  TemplateVar.set(template, 'ensLoading', true);
+  TemplateVar.set(template, "ensLoading", true);
 
   var resolverContract = new web3.won.Contract(resolverContractAbi);
 
@@ -317,34 +317,34 @@ function getAddr(name, ens, template, callback) {
             if (result != 0 && callback) {
               callback(result);
             }
-            TemplateVar.set(template, 'ensLoading', false);
+            TemplateVar.set(template, "ensLoading", false);
           })
           .catch(function(error) {
             console.log(error);
-            TemplateVar.set(template, 'ensLoading', false);
+            TemplateVar.set(template, "ensLoading", false);
           });
       } else {
-        TemplateVar.set(template, 'ensLoading', false);
+        TemplateVar.set(template, "ensLoading", false);
       }
     })
     .catch(function(error) {
       console.log(error);
-      TemplateVar.set(template, 'ensLoading', false);
+      TemplateVar.set(template, "ensLoading", false);
     });
 }
 
 function getName(address, ens, template, callback) {
-  TemplateVar.set(template, 'ensLoading', true);
+  TemplateVar.set(template, "ensLoading", true);
 
   var resolverContract = new web3.won.Contract(resolverContractAbi);
   var node = namehash(
-    address.toLowerCase().replace('0x', '') + '.addr.reverse'
+    address.toLowerCase().replace("0x", "") + ".addr.reverse"
   );
 
   // get a resolver address for that name
   ens.methods.resolver(node).call(function(error, resolverAddress) {
     if (error) {
-      console.log('Error from ens getName: ', error);
+      console.log("Error from ens getName: ", error);
       return;
     }
 
@@ -358,7 +358,7 @@ function getName(address, ens, template, callback) {
       });
     }
 
-    TemplateVar.set(template, 'ensLoading', false);
+    TemplateVar.set(template, "ensLoading", false);
   });
 }
 
@@ -373,22 +373,22 @@ Template.dapp_addressInput.onCreated(function() {
   var template = this;
 
   // default set to true, to show no error
-  TemplateVar.set('isValid', true);
-  TemplateVar.set('isChecksum', true);
+  TemplateVar.set("isValid", true);
+  TemplateVar.set("isChecksum", true);
 
-  TemplateVar.set(template, 'ensLoading', false);
+  TemplateVar.set(template, "ensLoading", false);
 
   if (this.data && this.data.value) {
-    TemplateVar.set('value', this.data.value);
+    TemplateVar.set("value", this.data.value);
   }
 
   var ensContract = new web3.won.Contract(ensContractAbi, ensAddress);
 
-  if (Session.get('network') === 'main') {
-    TemplateVar.set(template, 'ensContract', ensContract);
-    TemplateVar.set(template, 'ensAvailable', true);
+  if (Session.get("network") === "main") {
+    TemplateVar.set(template, "ensContract", ensContract);
+    TemplateVar.set(template, "ensAvailable", true);
   } else {
-    TemplateVar.set(template, 'ensAvailable', false);
+    TemplateVar.set(template, "ensAvailable", false);
   }
 
   web3.won.isSyncing(function(err, syncing) {
@@ -397,7 +397,7 @@ Template.dapp_addressInput.onCreated(function() {
       web3.won.getCode(ensAddress, function(err, code) {
         if (!err && code.length > 2) {
           // check if there's code on the address
-          TemplateVar.set(template, 'ensAvailable', true);
+          TemplateVar.set(template, "ensAvailable", true);
         }
       });
     }
@@ -406,7 +406,7 @@ Template.dapp_addressInput.onCreated(function() {
 
 Template.dapp_addressInput.onRendered(function() {
   if (this.data) {
-    this.$('input').trigger('change');
+    this.$("input").trigger("change");
   }
 });
 
@@ -417,13 +417,13 @@ Template.dapp_addressInput.helpers({
     @method (address)
     */
   address: function() {
-    var address = TemplateVar.get('value');
+    var address = TemplateVar.get("value");
 
     // if(Template.instance().view.isRendered && Template.instance().find('input').value !== address)
     // Template.instance().$('input').trigger('change');
 
     return _.isString(address) && web3.utils.isAddress(address)
-      ? '0x' + address.replace('0x', '')
+      ? "0x" + address.replace("0x", "")
       : false;
   },
   /**
@@ -450,19 +450,19 @@ Template.dapp_addressInput.helpers({
     */
   i18nText: function() {
     if (
-      typeof TAPi18n === 'undefined' ||
-      TAPi18n.__('elements.checksumAlert') == 'elements.checksumAlert'
+      typeof TAPi18n === "undefined" ||
+      TAPi18n.__("elements.checksumAlert") == "elements.checksumAlert"
     ) {
       return "This address looks valid, but it doesn't have some security features that will protect you against typos, so double check you have the right one. If provided, check if the security icon  matches.";
     }
-    return TAPi18n.__('elements.checksumAlert');
+    return TAPi18n.__("elements.checksumAlert");
   },
   ensDisplay: function() {
-    return TemplateVar.get('ensName')
-      .split('.')
+    return TemplateVar.get("ensName")
+      .split(".")
       .slice(0, -1)
       .reverse()
-      .join(' ▸ ');
+      .join(" ▸ ");
   }
 });
 
@@ -472,43 +472,42 @@ Template.dapp_addressInput.events({
 
     @event input input, change input
     */
-  'input input, keyup input': function(e, template) {
+  "input input, keyup input": function(e, template) {
     if (!e.currentTarget.value) return;
 
-    var value = e.currentTarget.value.replace(/[\s\*\(\)\!\?\#\$\%]+/g, '');
-    TemplateVar.set(template, 'hasName', false);
+    var value = e.currentTarget.value.replace(/[\s\*\(\)\!\?\#\$\%]+/g, "");
+    TemplateVar.set(template, "hasName", false);
 
     // add 0x
     if (
       value.length > 38 &&
-      value.indexOf('0x') === -1 &&
+      value.indexOf("0x") === -1 &&
       /^[0-9a-f]+$/.test(value.toLowerCase())
     ) {
-      value = '0x' + value;
+      value = "0x" + value;
     }
 
-
     if (web3.utils.isAddress(value) || _.isEmpty(value)) {
-      TemplateVar.set('isValid', true);
+      TemplateVar.set("isValid", true);
 
       if (!_.isEmpty(value)) {
-        TemplateVar.set('value', '0x' + value.replace('0x', ''));
-        TemplateVar.set('isChecksum', web3.utils.checkAddressChecksum(value));
+        TemplateVar.set("value", "0x" + value.replace("0x", ""));
+        TemplateVar.set("isChecksum", web3.utils.checkAddressChecksum(value));
 
-        if (TemplateVar.get('ensAvailable')) {
-          var ens = TemplateVar.get('ensContract');
+        if (TemplateVar.get("ensAvailable")) {
+          var ens = TemplateVar.get("ensContract");
 
           // if an address was added, check if there's a name associated with it
           getName(value, ens, template, function(name) {
             // Any address can claim to be any name. Double check it!
             getAddr(name, ens, template, function(addr) {
-              TemplateVar.set(template, 'hasName', true);
-              TemplateVar.set(template, 'ensName', name);
-              TemplateVar.set(template, 'isValid', true);
-              TemplateVar.set(template, 'isChecksum', true);
+              TemplateVar.set(template, "hasName", true);
+              TemplateVar.set(template, "ensName", name);
+              TemplateVar.set(template, "isValid", true);
+              TemplateVar.set(template, "isChecksum", true);
               TemplateVar.set(
                 template,
-                'value',
+                "value",
                 web3.utils.toChecksumAddress(addr)
               );
               e.currentTarget.value = web3.utils.toChecksumAddress(addr);
@@ -521,33 +520,33 @@ Template.dapp_addressInput.events({
             TemplateVar.set(template, 'isNotKycAddress', (res.level === 0));
         }).catch(console.error);
       } else {
-        TemplateVar.set('value', undefined);
-        TemplateVar.set('isChecksum', true);
+        TemplateVar.set("value", undefined);
+        TemplateVar.set("isChecksum", true);
       }
       e.currentTarget.value = value;
-    } else if (TemplateVar.get('ensAvailable')) {
-      if (value.slice(-4) !== '.won') {
-        value = value + '.won';
+    } else if (TemplateVar.get("ensAvailable")) {
+      if (value.slice(-4) !== ".eth") {
+        value = value + ".eth";
       }
 
-      TemplateVar.set('hasName', false);
-      TemplateVar.set('isValid', false);
-      TemplateVar.set('value', undefined);
-      var ens = TemplateVar.get('ensContract');
+      TemplateVar.set("hasName", false);
+      TemplateVar.set("isValid", false);
+      TemplateVar.set("value", undefined);
+      var ens = TemplateVar.get("ensContract");
 
       getAddr(value, ens, template, function(addr) {
-        TemplateVar.set(template, 'hasName', true);
-        TemplateVar.set(template, 'isValid', true);
-        TemplateVar.set(template, 'isChecksum', true);
-        TemplateVar.set(template, 'value', web3.utils.toChecksumAddress(addr));
-        TemplateVar.set(template, 'ensName', value);
+        TemplateVar.set(template, "hasName", true);
+        TemplateVar.set(template, "isValid", true);
+        TemplateVar.set(template, "isChecksum", true);
+        TemplateVar.set(template, "value", web3.utils.toChecksumAddress(addr));
+        TemplateVar.set(template, "ensName", value);
         // if field is not focused, set the address value immediately (otherwise, will happen on blur)
         if (document.activeElement !== e.currentTarget) {
           e.currentTarget.value = web3.utils.toChecksumAddress(addr);
         }
         // check name
         getName(addr, ens, template, function(name) {
-          TemplateVar.set(template, 'ensName', name);
+          TemplateVar.set(template, "ensName", name);
         });
       });
     }
@@ -557,17 +556,17 @@ Template.dapp_addressInput.events({
 
     @event input input, change input
     */
-  'focus input': function(e, template) {
-    if (TemplateVar.get('hasName'))
-      e.currentTarget.value = TemplateVar.get('ensName');
+  "focus input": function(e, template) {
+    if (TemplateVar.get("hasName"))
+      e.currentTarget.value = TemplateVar.get("ensName");
   },
   /**
     Set the address on blur
 
     @event blur input
     */
-  'blur input': function(e, template) {
-    var value = TemplateVar.get('value');
+  "blur input": function(e, template) {
+    var value = TemplateVar.get("value");
     if (value) e.currentTarget.value = value;
   },
   /**
@@ -577,9 +576,9 @@ Template.dapp_addressInput.events({
 
     @event click a
     */
-  'click a, click .ens-name': function(e, template) {
+  "click a, click .ens-name": function(e, template) {
     // focus on input element
-    var inputElement = template.find('input');
+    var inputElement = template.find("input");
     inputElement.focus();
     e.preventDefault();
   }

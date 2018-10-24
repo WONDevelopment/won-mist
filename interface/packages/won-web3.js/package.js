@@ -1,6 +1,6 @@
 /* jshint ignore:start */
 Package.describe({
-  name: 'ethereum:web3',
+  name: 'won:web3',
   version: '1.0.0-beta.33',
   summary:
     'Ethereum JavaScript API, middleware to talk to a ethreum node over RPC',

@@ -18,7 +18,7 @@ The cached identicons
 */
 var cache = {};
 
-Template['dapp_identicon'].helpers({
+Template["dapp_identicon"].helpers({
   /**
     Make sure the identity is lowercased
 
@@ -41,8 +41,8 @@ Template['dapp_identicon'].helpers({
     }
 
     return (
-      cache['ID_' + identity] ||
-      (cache['ID_' + identity] = hqx(
+      cache["ID_" + identity] ||
+      (cache["ID_" + identity] = hqx(
         hqx(
           blockies.create({
             seed: identity,
@@ -62,8 +62,8 @@ Template['dapp_identicon'].helpers({
     */
   identiconDataPixel: function(identity) {
     return (
-      cache['IDP_' + identity] ||
-      (cache['IDP_' + identity] = blockies
+      cache["IDP_" + identity] ||
+      (cache["IDP_" + identity] = blockies
         .create({
           seed: identity,
           size: 8,
@@ -79,12 +79,12 @@ Template['dapp_identicon'].helpers({
     */
   i18nTextIcon: function() {
     if (
-      typeof TAPi18n === 'undefined' ||
-      TAPi18n.__('elements.identiconHelper') == 'elements.identiconHelper'
+      typeof TAPi18n === "undefined" ||
+      TAPi18n.__("elements.identiconHelper") == "elements.identiconHelper"
     ) {
       return "This is a security icon, if there's any change on the address the resulting icon should be a completelly different one";
     } else {
-      return TAPi18n.__('elements.identiconHelper');
+      return TAPi18n.__("elements.identiconHelper");
     }
   }
 });

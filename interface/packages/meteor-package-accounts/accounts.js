@@ -9,13 +9,13 @@ The accounts collection, with some ethereum additions.
 @class EthAccounts
 @constructor
 */
-var collection = new Mongo.Collection('ethereum_accounts', {
+var collection = new Mongo.Collection("ethereum_accounts", {
   connection: null
 });
 EthAccounts = _.clone(collection);
 EthAccounts._collection = collection;
 
-if (typeof PersistentMinimongo !== 'undefined')
+if (typeof PersistentMinimongo !== "undefined")
   new PersistentMinimongo(EthAccounts._collection);
 
 /**
@@ -32,8 +32,8 @@ EthAccounts._watchBalance = function() {
 
   // UPDATE SIMPLE ACCOUNTS balance on each new block
   this.blockSubscription = web3.won
-    .subscribe('newBlockHeaders')
-    .on('data', function() {
+    .subscribe("newBlockHeaders")
+    .on("data", function() {
       _this._updateBalance();
     });
 };
@@ -75,7 +75,7 @@ EthAccounts._addAccounts = function() {
   // UPDATE normal accounts on start
   web3.won.getAccounts(function(e, accounts) {
     if (!e) {
-      var visibleAccounts = _.pluck(EthAccounts.find().fetch(), 'address');
+      var visibleAccounts = _.pluck(EthAccounts.find().fetch(), "address");
 
       if (
         !_.isEmpty(accounts) &&
@@ -101,7 +101,7 @@ EthAccounts._addAccounts = function() {
         } else {
           EthAccounts.updateAll(account._id, {
             $unset: {
-              deactivated: ''
+              deactivated: ""
             }
           });
         }
@@ -118,19 +118,24 @@ EthAccounts._addAccounts = function() {
               balance = balance.toFixed();
             }
 
-            web3.won.getCoinbase().then(coinbase => {
+            web3.won.getCoinbase(function(error, coinbase) {
+              if (error) {
+                console.warn("getCoinbase error: ", error);
+                coinbase = null; // continue with null coinbase
+              }
+
               var doc = EthAccounts.findAll({
                 address: address
               }).fetch()[0];
 
               var insert = {
-                type: 'account',
+                type: "account",
                 address: address,
                 balance: balance,
                 name:
                   address === coinbase
-                    ? 'Main account (Wonbase)'
-                    : 'Account ' + accountsCount
+                    ? "Main account (Wonbase)"
+                    : "Account " + accountsCount
               };
 
               if (doc) {
@@ -271,7 +276,7 @@ Starts fetching and watching the accounts
 EthAccounts.init = function() {
   var _this = this;
 
-  if (typeof web3 === 'undefined') {
+  if (typeof web3 === "undefined") {
     console.warn(
       "EthAccounts couldn't find web3, please make sure to instantiate a web3 object before calling EthAccounts.init()"
     );

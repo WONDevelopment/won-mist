@@ -14,7 +14,7 @@ Helper functions for ethereum dapps
 var isMeteorPackage = true;
 
 // setup LocalStore if not available
-if (typeof LocalStore === 'undefined') {
+if (typeof LocalStore === "undefined") {
   isMeteorPackage = false;
   LocalStore = {
     get: function() {},
@@ -23,7 +23,7 @@ if (typeof LocalStore === 'undefined') {
 }
 
 // stup Tracker if not available
-if (typeof Tracker === 'undefined')
+if (typeof Tracker === "undefined")
   Tracker = {
     Dependency: function() {
       return {
@@ -44,11 +44,11 @@ Check for supported currencies
 */
 var supportedCurrencies = function(unit) {
   return (
-    unit === 'usd' ||
-    unit === 'eur' ||
-    unit === 'btc' ||
-    unit === 'gbp' ||
-    unit === 'brl'
+    unit === "usd" ||
+    unit === "eur" ||
+    unit === "btc" ||
+    unit === "gbp" ||
+    unit === "brl"
   );
 };
 
@@ -61,11 +61,11 @@ Gets the ether unit if not set from localstorage
 */
 var getUnit = function(unit) {
   if (!_.isString(unit)) {
-    unit = LocalStore.get('dapp_etherUnit');
+    unit = LocalStore.get("dapp_etherUnit");
 
     if (!unit) {
-      unit = 'won';
-      LocalStore.set('dapp_etherUnit', unit);
+      unit = "won";
+      LocalStore.set("dapp_etherUnit", unit);
     }
   }
 
@@ -80,7 +80,7 @@ Helper functions for ethereum dapps
 */
 
 EthTools = {
-  lang: 'en'
+  lang: "en"
 };
 
 if (isMeteorPackage) {
@@ -95,12 +95,12 @@ if (isMeteorPackage) {
     **/
   EthTools.setUnit = function(unit) {
     if (supportedCurrencies(unit)) {
-      LocalStore.set('dapp_etherUnit', unit);
+      LocalStore.set("dapp_etherUnit", unit);
       return true;
     } else {
       try {
         web3.utils.toWei('1', unit);
-        LocalStore.set('dapp_etherUnit', unit);
+        LocalStore.set("dapp_etherUnit", unit);
         return true;
       } catch (e) {
         return false;
@@ -117,7 +117,7 @@ if (isMeteorPackage) {
     @return {String} unit the unit like 'ether', or 'eur'
     **/
   EthTools.getUnit = function() {
-    return LocalStore.get('dapp_etherUnit');
+    return LocalStore.get("dapp_etherUnit");
   };
 }
 
@@ -161,30 +161,30 @@ EthTools.formatNumber = function(number, format) {
   if (_.isFinite(number) && !_.isObject(number)) number = new BigNumber(number);
 
   options =
-    EthTools.lang === 'en'
+    EthTools.lang === "en"
       ? {
-          decimalSeparator: '.',
-          groupSeparator: ',',
+          decimalSeparator: ".",
+          groupSeparator: ",",
           groupSize: 3
         }
       : {
-          decimalSeparator: ',',
-          groupSeparator: ' ',
+          decimalSeparator: ",",
+          groupSeparator: " ",
           groupSize: 3
         };
   BigNumber.config({ FORMAT: options });
 
   // get segment positions (0,0. | 0 | [0])
-  if (format && ~format.indexOf('.')) {
-    var decimalPos = format.indexOf('.');
-    if (~format.indexOf('[')) {
+  if (format && ~format.indexOf(".")) {
+    var decimalPos = format.indexOf(".");
+    if (~format.indexOf("[")) {
       length = format
-        .substr(decimalPos, format.indexOf('[') - decimalPos)
-        .replace(/[\.\[\]]/g, '').length;
-      optionalLength = format.substr(format.indexOf('[')).replace(/[\[\]]/g, '')
+        .substr(decimalPos, format.indexOf("[") - decimalPos)
+        .replace(/[\.\[\]]/g, "").length;
+      optionalLength = format.substr(format.indexOf("[")).replace(/[\[\]]/g, "")
         .length;
     } else {
-      length = format.substr(decimalPos).replace(/[\.\[\]]/g, '').length;
+      length = format.substr(decimalPos).replace(/[\.\[\]]/g, "").length;
       optionalLength = 0;
     }
   }
@@ -197,12 +197,12 @@ EthTools.formatNumber = function(number, format) {
       0,
       number.indexOf(options.decimalSeparator) + 1
     );
-    var afterDecimal = number.replace(beforeDecimal, '').substr(0, length);
+    var afterDecimal = number.replace(beforeDecimal, "").substr(0, length);
     var afterDecimalOptional = number
-      .replace(beforeDecimal, '')
+      .replace(beforeDecimal, "")
       .substr(length, optionalLength)
-      .replace(/0*$/, '');
-    beforeDecimal = beforeDecimal.replace(options.decimalSeparator, '');
+      .replace(/0*$/, "");
+    beforeDecimal = beforeDecimal.replace(options.decimalSeparator, "");
 
     return !afterDecimal && !afterDecimalOptional
       ? beforeDecimal
@@ -234,19 +234,19 @@ EthTools.formatBalance = function(number, format, unit) {
 
   if (format instanceof Spacebars.kw) format = null;
 
-  format = format || '0,0.[00000000]';
+  format = format || "0,0.[00000000]";
 
   unit = getUnit(unit);
 
-  if (typeof EthTools.ticker !== 'undefined' && supportedCurrencies(unit)) {
+  if (typeof EthTools.ticker !== "undefined" && supportedCurrencies(unit)) {
     var ticker = EthTools.ticker.findOne(unit, { fields: { price: 1 } });
 
     // convert first to ether
     number = web3.utils.fromWei(
-      number instanceof BigNumber || typeof number === 'number'
+      number instanceof BigNumber || typeof number === "number"
         ? web3.utils.toBN(number)
         : number,
-      'won'
+      "won"
     );
 
     // then times the currency
@@ -256,25 +256,25 @@ EthTools.formatBalance = function(number, format, unit) {
           ? number.times(ticker.price)
           : new BigNumber(String(number), 10).times(ticker.price);
     } else {
-      number = '0';
+      number = "0";
     }
   } else {
     number = web3.utils.fromWei(
-      number instanceof BigNumber || typeof number === 'number'
+      number instanceof BigNumber || typeof number === "number"
         ? web3.utils.toBN(number)
         : number,
       unit.toLowerCase()
     );
   }
 
-  var isUppercase = format.indexOf('UNIT') !== -1;
+  var isUppercase = format.indexOf("UNIT") !== -1;
 
-  var cleanedFormat = format.replace(/ *unit */i, '').replace(/ +/, '');
-  var format = format.replace(cleanedFormat, '__format__');
+  var cleanedFormat = format.replace(/ *unit */i, "").replace(/ +/, "");
+  var format = format.replace(cleanedFormat, "__format__");
 
-  if (format.toLowerCase().indexOf('unit') !== -1) {
+  if (format.toLowerCase().indexOf("unit") !== -1) {
     return format
-      .replace('__format__', EthTools.formatNumber(number, cleanedFormat))
+      .replace("__format__", EthTools.formatNumber(number, cleanedFormat))
       .replace(/unit/i, isUppercase ? unit.toUpperCase() : unit);
   } else return EthTools.formatNumber(number, cleanedFormat);
 };
@@ -293,15 +293,15 @@ EthTools.toWei = function(number, unit) {
 
   unit = getUnit(unit);
 
-  if (typeof EthTools.ticker !== 'undefined' && supportedCurrencies(unit)) {
+  if (typeof EthTools.ticker !== "undefined" && supportedCurrencies(unit)) {
     var ticker = EthTools.ticker.findOne(unit, { fields: { price: 1 } });
 
     // convert first to ether
     number = web3.utils.toWei(
-      number instanceof BigNumber || typeof number === 'number'
+      number instanceof BigNumber || typeof number === "number"
         ? web3.utils.toBN(number)
         : number,
-      'won'
+      "won"
     );
 
     // then times the currency
@@ -314,11 +314,11 @@ EthTools.toWei = function(number, unit) {
       // make sure the number is flat
       number = number.round(0).toString(10);
     } else {
-      number = '0';
+      number = "0";
     }
   } else {
     number = web3.utils.toWei(
-      number instanceof BigNumber || typeof number === 'number'
+      number instanceof BigNumber || typeof number === "number"
         ? web3.utils.toBN(number)
         : number,
       unit.toLowerCase()

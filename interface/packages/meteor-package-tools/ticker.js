@@ -1,5 +1,5 @@
 // Price ticker
-EthTools.ticker = new Mongo.Collection('ethereum_price_ticker', {
+EthTools.ticker = new Mongo.Collection("ethereum_price_ticker", {
   connection: null
 });
 if (Meteor.isClient) new PersistentMinimongo(EthTools.ticker);
@@ -7,13 +7,13 @@ if (Meteor.isClient) new PersistentMinimongo(EthTools.ticker);
 EthTools.ticker.start = function(options) {
   options = options || {};
   if (!options.currencies) {
-    options.currencies = ['BTC', 'USD', 'EUR'];
+    options.currencies = ["BTC", "USD", "EUR"];
   }
   var url =
-    'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=' +
-    options.currencies.join(',');
+    "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=" +
+    options.currencies.join(",");
   if (options.extraParams) {
-    url += '&extraParams=' + options.extraParams;
+    url += "&extraParams=" + options.extraParams;
   }
 
   var updatePrice = function(e, res) {
@@ -37,7 +37,7 @@ EthTools.ticker.start = function(options) {
       }
     } else {
       console.warn(
-        'Can not connect to https://mini-api.cryptocompare.com to get price ticker data, please check your internet connection.'
+        "Can not connect to https://mini-api.cryptocompare.com to get price ticker data, please check your internet connection."
       );
     }
   };

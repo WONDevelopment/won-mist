@@ -31,11 +31,11 @@ var calculateGasInWei = function(template, gas, gasPrice, returnGasPrice) {
   if (!_.isObject(gasPrice)) gasPrice = new BigNumber(String(gasPrice), 10);
 
   if (_.isUndefined(gas)) {
-    console.warn('No gas provided for {{> dapp_selectGasPrice}}');
+    console.warn("No gas provided for {{> dapp_selectGasPrice}}");
     return new BigNumber(0);
   }
 
-  var feeMultiplicator = Number(TemplateVar.get(template, 'feeMultiplicator'));
+  var feeMultiplicator = Number(TemplateVar.get(template, "feeMultiplicator"));
 
   // divide and multiply to round it to the nearest billion wei (1 shannon)
   // var billion = new BigNumber(1000000000);
@@ -48,13 +48,13 @@ var calculateGasInWei = function(template, gas, gasPrice, returnGasPrice) {
   return returnGasPrice ? gasPrice : gasPrice.times(gas);
 };
 
-Template['dapp_selectGasPrice'].onCreated(function() {
-  TemplateVar.set('gasInWei', '0');
-  TemplateVar.set('gasPrice', '0');
-  TemplateVar.set('feeMultiplicator', 0);
+Template["dapp_selectGasPrice"].onCreated(function() {
+  TemplateVar.set("gasInWei", "0");
+  TemplateVar.set("gasPrice", "0");
+  TemplateVar.set("feeMultiplicator", 0);
 });
 
-Template['dapp_selectGasPrice'].helpers({
+Template["dapp_selectGasPrice"].helpers({
   /**
     Return the currently selected fee value calculate with gas price
 
@@ -62,20 +62,20 @@ Template['dapp_selectGasPrice'].helpers({
     */
   fee: function() {
     if (
-      _.isFinite(TemplateVar.get('feeMultiplicator')) &&
+      _.isFinite(TemplateVar.get("feeMultiplicator")) &&
       _.isFinite(this.gas)
     ) {
       var template = Template.instance();
 
       // set the value
       TemplateVar.set(
-        'gasInWei',
+        "gasInWei",
         calculateGasInWei(template, this.gas, this.gasPrice)
           .floor()
           .toString(10)
       );
       TemplateVar.set(
-        'gasPrice',
+        "gasPrice",
         calculateGasInWei(template, this.gas, this.gasPrice, true)
           .floor()
           .toString(10)
@@ -84,7 +84,7 @@ Template['dapp_selectGasPrice'].helpers({
       // return the fee
       return EthTools.formatBalance(
         calculateGasInWei(template, this.gas, this.gasPrice).toString(10),
-        '0,0.[000000000000000000]',
+        "0,0.[000000000000000000]",
         this.unit
       );
     }
@@ -105,26 +105,26 @@ Template['dapp_selectGasPrice'].helpers({
     */
   i18nText: function(key) {
     if (
-      typeof TAPi18n !== 'undefined' &&
-      TAPi18n.__('elements.selectGasPrice.' + key) !==
-        'elements.selectGasPrice.' + key
+      typeof TAPi18n !== "undefined" &&
+      TAPi18n.__("elements.selectGasPrice." + key) !==
+        "elements.selectGasPrice." + key
     ) {
-      return TAPi18n.__('elements.selectGasPrice.' + key);
-    } else if (typeof this[key] !== 'undefined') {
+      return TAPi18n.__("elements.selectGasPrice." + key);
+    } else if (typeof this[key] !== "undefined") {
       return this[key];
     } else {
-      return key === 'high' ? '+' : '-';
+      return key === "high" ? "+" : "-";
     }
   }
 });
 
-Template['dapp_selectGasPrice'].events({
+Template["dapp_selectGasPrice"].events({
   /**
     Change the selected fee
     
     @event change input[name="fee"], input input[name="fee"]
     */
   'change input[name="fee"], input input[name="fee"]': function(e) {
-    TemplateVar.set('feeMultiplicator', Number(e.currentTarget.value));
+    TemplateVar.set("feeMultiplicator", Number(e.currentTarget.value));
   }
 });

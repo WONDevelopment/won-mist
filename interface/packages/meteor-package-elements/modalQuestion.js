@@ -26,7 +26,7 @@ The data context for this modal should look as follows:
 @constructor
 */
 
-Template['dapp_modal_question'].helpers({
+Template["dapp_modal_question"].helpers({
   /**
     Check if the `ok` property is present, without executing it yet.
 
@@ -50,7 +50,7 @@ Template['dapp_modal_question'].helpers({
     @method (okButtonText)
     */
   okButtonText: function() {
-    return this.modalQuestionOkButtonText || TAPi18n.__('buttons.ok') || 'OK';
+    return this.modalQuestionOkButtonText || TAPi18n.__("buttons.ok") || "OK";
   },
 
   /**
@@ -61,19 +61,19 @@ Template['dapp_modal_question'].helpers({
   cancelButtonText: function() {
     return (
       this.modalQuestionCancelButtonText ||
-      TAPi18n.__('buttons.cancel') ||
-      'Cancel'
+      TAPi18n.__("buttons.cancel") ||
+      "Cancel"
     );
   }
 });
 
-Template['dapp_modal_question'].events({
+Template["dapp_modal_question"].events({
   /**
     When the confirm button is clicked, execute the given ok() function.
 
     @event click .dapp-modal-buttons button.ok
     */
-  'click .dapp-modal-buttons button.ok': function(e) {
+  "click .dapp-modal-buttons button.ok": function(e) {
     // hide the modal
     EthElements.Modal.hide();
 
@@ -86,7 +86,7 @@ Template['dapp_modal_question'].events({
 
     @event click .dapp-modal-buttons button.cancel
     */
-  'click .dapp-modal-buttons button.cancel': function(e) {
+  "click .dapp-modal-buttons button.cancel": function(e) {
     // hide the modal
     EthElements.Modal.hide();
 

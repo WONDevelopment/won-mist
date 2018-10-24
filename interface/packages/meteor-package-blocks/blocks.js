@@ -10,7 +10,7 @@ The EthBlocks collection, with some ethereum additions.
 @constructor
 */
 
-EthBlocks = new Mongo.Collection('ethereum_blocks', { connection: null });
+EthBlocks = new Mongo.Collection("ethereum_blocks", { connection: null });
 
 // if(typeof PersistentMinimongo !== 'undefined')
 //     new PersistentMinimongo(EthBlocks);
@@ -20,7 +20,7 @@ Gives you reactively the lates block.
 
 @property latest
 */
-Object.defineProperty(EthBlocks, 'latest', {
+Object.defineProperty(EthBlocks, "latest", {
   get: function() {
     return EthBlocks.findOne({}, { sort: { number: -1 } }) || {};
   },
@@ -44,7 +44,7 @@ Start looking for new blocks
 @method init
 */
 EthBlocks.init = function() {
-  if (typeof web3 === 'undefined') {
+  if (typeof web3 === "undefined") {
     console.warn(
       "EthBlocks couldn't find web3, please make sure to instantiate a web3 object before calling EthBlocks.init()"
     );
@@ -103,7 +103,7 @@ function updateBlock(block) {
     if (!e) {
       block.gasPrice = gasPrice.toString(10);
       EthBlocks.upsert(
-        'bl_' + block.hash.replace('0x', '').substr(0, 20),
+        "bl_" + block.hash.replace("0x", "").substr(0, 20),
         block
       );
     }
@@ -118,14 +118,14 @@ Additionally cap the collection to 50 blocks
 */
 function observeLatestBlocks() {
   // get the latest block immediately
-  web3.won.getBlock('latest', function(e, block) {
+  web3.won.getBlock("latest", function(e, block) {
     if (!e) {
       updateBlock(block);
     }
   });
 
   // GET the latest blockchain information
-  subscription = web3.won.subscribe('newBlockHeaders', function(error, result) {
+  subscription = web3.won.subscribe("newBlockHeaders", function(error, result) {
     checkLatestBlocks(error, result ? result.hash : null);
   });
 }

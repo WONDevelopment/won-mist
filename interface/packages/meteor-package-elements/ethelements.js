@@ -50,7 +50,7 @@ EthElements = {
     question: function(data, options) {
       EthElements.Modal.show(
         {
-          template: 'dapp_modal_question',
+          template: "dapp_modal_question",
           data: data
         },
         options
