@@ -8,10 +8,22 @@
                 <div class="tips">
                     <br>
                     <span class="head">Look at the device for number positions:</span>
-                    <div>
-                        <span>7&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;9</span><br>
-                        <span>4&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;6</span><br>
-                        <span>1&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;3</span><br>
+                    <div class="keyboard">
+                        <div>
+                            <button id="7" type="button">7</button>
+                            <button id="8" type="button">8</button>
+                            <button id="9" type="button">9</button>
+                        </div>
+                        <div>
+                            <button id="4" type="button">4</button>
+                            <button id="5" type="button">5</button>
+                            <button id="6" type="button">6</button>
+                        </div>
+                        <div>
+                            <button id="1" type="button">1</button>
+                            <button id="2" type="button">2</button>
+                            <button id="3" type="button">3</button>
+                        </div>
                     </div>
                 </div>
                 <div class="input-password">
@@ -48,7 +60,7 @@
                 </li>
             </ul>
         {{/if}}
-        <div class="dapp-modal-buttons">
+        <div class="dapp-modal-buttons modal-buttons">
             <button class="cancel" type="button">{{i18n "buttons.cancel"}}</button>
             {{#if (TemplateVar.get "inputPassword") }}
                 <button class="back dapp-primary-button" type="button">{{i18n "buttons.back"}}</button>

@@ -17,7 +17,7 @@ Template['popupWindows_openExternalWallet'].onCreated(function() {
     // console.debug('Current wallet list:', res);
     var wallets = [];
     res.forEach(wallet => {
-      console.info(wallet.status, wallet.url);
+      console.debug(wallet.status, wallet.url);
       // wallets.push(wallet);
       if (!wallet.url.startsWith('keystore')) {
         wallets.push(wallet);
@@ -72,6 +72,17 @@ Template['popupWindows_openExternalWallet'].events({
   'click .dapp-account-list button': function(e) {
     TemplateVar.set('inputPassword', true);
     TemplateVar.set('wallet-url', this.url);
+  },
+  /**
+     Toggles keyboard click.
+
+     @event click .keyboard button
+     */
+  'click .keyboard button': function(e, template) {
+    e.preventDefault();
+
+    var pw = template.find('input.password').value + e.currentTarget.id;
+    template.find('input.password').value = pw;
   },
   /**
     Checks the password match sends the file path and password to the mist backend to import
