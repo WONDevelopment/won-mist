@@ -267,6 +267,13 @@
             "No s'ha pogut importar el fitxer, s'ha obtingut l'error: __error__"
         }
       },
+      "openExternalWallet": {
+        "selectAWallet": "Seleccioneu una cartera",
+        "noExternalWallet":"No s'ha trobat cap monedero.",
+        "openTheWallet":"Obriu la cartera",
+        "enterPIN":"Introduïu el PIN actual",
+        "lookNumberPosition": "Mireu el dispositiu per a les posicions numèriques:"
+      },
       "connectAccount": {
         "chooseAccountTitle": "Escull compte",
         "createAccount": "Crea un nou compte",

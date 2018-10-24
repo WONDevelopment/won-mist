@@ -237,6 +237,13 @@
           "importFailed": "Couldn't import the file, got: __error__"
         }
       },
+      "openExternalWallet": {
+        "selectAWallet": "Select a wallet",
+        "noExternalWallet":"There is no wallet found.",
+        "openTheWallet":"Open the wallet",
+        "enterPIN":"Please enter current PIN",
+        "lookNumberPosition": "Look at the device for number positions:"
+      },
       "connectAccount": {
         "chooseAccountTitle": "Choose account",
         "createAccount": "Create new account",

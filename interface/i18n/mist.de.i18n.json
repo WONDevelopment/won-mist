@@ -241,6 +241,13 @@
         "noUpdateFound":
           "Kein Update gefunden. Du verwendest die aktuellste Version von __name__."
       },
+      "openExternalWallet": {
+        "selectAWallet": "Wählen Sie eine Brieftasche",
+        "noExternalWallet":"Es wurde keine Brieftasche gefunden.",
+        "openTheWallet":"Öffne die Brieftasche",
+        "enterPIN":"Bitte geben Sie die aktuelle PIN ein",
+        "lookNumberPosition": "Sehen Sie sich das Gerät für die Nummernpositionen an:"
+      },
       "connectAccount": {
         "chooseAccountTitle": "Wähle ein Konto",
         "createAccount": "Erstelle ein neues Konto",

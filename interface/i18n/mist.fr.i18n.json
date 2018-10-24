@@ -240,6 +240,13 @@
         "noUpdateFound":
           "No update found. You are running the latest version of __name__."
       },
+      "openExternalWallet": {
+        "selectAWallet": "Sélectionnez un portefeuille",
+        "noExternalWallet":"Il n'y a pas de portefeuille trouvé.",
+        "openTheWallet":"Ouvrir le portefeuille",
+        "enterPIN":"S'il vous plaît entrer le code PIN actuel",
+        "lookNumberPosition": "Regardez l'appareil pour les positions numériques:"
+      },
       "connectAccount": {
         "chooseAccountTitle": "Choose account",
         "createAccount": "Create new account",

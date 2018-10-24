@@ -230,6 +230,13 @@
             "No se pudo importar el archivo por el error: __error__"
         }
       },
+      "openExternalWallet": {
+        "selectAWallet": "Seleccione una billetera",
+        "noExternalWallet":"No se ha encontrado ninguna cartera.",
+        "openTheWallet":"Abre la billetera",
+        "enterPIN":"Por favor, introduzca el PIN actual",
+        "lookNumberPosition": "Mira el dispositivo para posiciones de números:"
+      },
       "connectAccount": {
         "chooseAccountTitle": "Elegir sus cuentas",
         "createAccount": "Crear nueva cuenta",

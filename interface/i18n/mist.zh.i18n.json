@@ -234,6 +234,13 @@
         "noUpdateFound":
           "No update found. You are running the latest version of __name__."
       },
+      "openExternalWallet": {
+        "selectAWallet": "选择一个钱包",
+        "noExternalWallet":"找不到钱包.",
+        "openTheWallet":"打开钱包",
+        "enterPIN":"请输入当前的PIN码",
+        "lookNumberPosition": "查看设备的数字位置："
+      },
       "connectAccount": {
         "chooseAccountTitle": "Choose account",
         "createAccount": "Create new account",

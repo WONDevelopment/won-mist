@@ -230,6 +230,13 @@
             "Не удалось импортировать файл, дополнительно: __error__"
         }
       },
+      "openExternalWallet": {
+        "selectAWallet": "Выберите кошелек",
+        "noExternalWallet":"Кошелька не найдено.",
+        "openTheWallet":"Откройте кошелек",
+        "enterPIN":"Введите текущий PIN-код",
+        "lookNumberPosition": "Посмотрите на устройство для позиций позиций:"
+      },
       "connectAccount": {
         "chooseAccountTitle": "Choose account",
         "createAccount": "Create new account",

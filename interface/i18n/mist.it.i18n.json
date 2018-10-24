@@ -269,6 +269,13 @@
           "importFailed": "Impossibile importare il file: __error__"
         }
       },
+      "openExternalWallet": {
+        "selectAWallet": "Seleziona un portafoglio",
+        "noExternalWallet":"Non è stato trovato nessun portafoglio.",
+        "openTheWallet":"Apri il portafoglio",
+        "enterPIN":"Si prega di inserire il PIN corrente",
+        "lookNumberPosition": "Guarda il dispositivo per le posizioni numeriche:"
+      },
       "connectAccount": {
         "chooseAccountTitle": "Scegli account",
         "createAccount": "Crea nuovo account",

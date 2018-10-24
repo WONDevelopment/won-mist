@@ -236,6 +236,13 @@
         "noUpdateFound":
           "업데이트가 없습니다. 최신 버전의 __name__ 를 사용하고 있습니다."
       },
+      "openExternalWallet": {
+        "selectAWallet": "지갑 선택",
+        "noExternalWallet":"지갑이 없습니다.",
+        "openTheWallet":"지갑 열어 라.",
+        "enterPIN":"현재 PIN을 입력하십시오.",
+        "lookNumberPosition": "번호 위치에 대한 장치를 살펴보십시오."
+      },
       "connectAccount": {
         "chooseAccountTitle": "계정 선택",
         "createAccount": "새 계정 생성",

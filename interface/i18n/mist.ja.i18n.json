@@ -240,6 +240,13 @@
         "noUpdateFound":
           "新しいバージョンは見つかりませんでした. あなたの __name__ は最新バージョンです."
       },
+      "openExternalWallet": {
+        "selectAWallet": "ウォレットを選択",
+        "noExternalWallet":"ウォレットが見つかりません.",
+        "openTheWallet":"ウォレットを開く",
+        "enterPIN":"現在のPINを入力してください",
+        "lookNumberPosition": "番号の位置については、デバイスを見てください："
+      },
       "connectAccount": {
         "chooseAccountTitle": "アカウントを選ぶ",
         "createAccount": "アカウントを新規作成",

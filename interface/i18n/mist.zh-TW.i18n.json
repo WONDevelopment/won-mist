@@ -233,6 +233,13 @@
         "noUpdateFound":
           "No update found. You are running the latest version of __name__."
       },
+      "openExternalWallet": {
+        "selectAWallet": "選擇一個錢包",
+        "noExternalWallet":" 找不到錢包.",
+        "openTheWallet":"打開錢包",
+        "enterPIN":"請輸入當前的PIN碼",
+        "lookNumberPosition": "查看設備的數字位置："
+      },
       "connectAccount": {
         "chooseAccountTitle": "Choose account",
         "createAccount": "Create new account",
