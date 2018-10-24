@@ -1,5 +1,5 @@
 Package.describe({
-  name: "won:accounts",
+  name: "ethereum:accounts",
   summary:
     "Provides and updates the ethereum accounts in the Accounts collection",
   version: "1.1.0",

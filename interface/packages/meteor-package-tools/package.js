@@ -1,5 +1,5 @@
 Package.describe({
-  name: "won:tools",
+  name: "ethereum:tools",
   summary: "Helper functions for dapps",
   version: "1.1.0",
   git: "http://github.com/ethereum/meteor-package-tools"

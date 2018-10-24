@@ -1,5 +1,5 @@
 Package.describe({
-  name: "won:elements",
+  name: "ethereum:elements",
   summary: "Basic elements for Dapps",
   version: "1.2.0",
   git: "http://github.com/ethereum/meteor-package-elements"
