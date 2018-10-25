@@ -1,4 +1,4 @@
-# Ethereum accounts
+# Won accounts
 
 Provides you with an `EthAccounts` collection, where balances are automatically updated.
 Additionally the accounts are persisted in localstorage.

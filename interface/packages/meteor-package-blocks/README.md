@@ -1,4 +1,4 @@
-# Ethereum blocks
+# Won blocks
 
 Provides you with an `EthBlocks` collection, which stores the last 50 blocks.
 
