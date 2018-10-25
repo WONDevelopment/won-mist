@@ -47,9 +47,9 @@ numeral:languages
 hashanp:geopattern
 shell-server
 dynamic-import
-ethereum:blocks@1.1.0
-ethereum:accounts@1.1.0
-ethereum:tools@1.1.0
-ethereum:elements@1.1.0
-ethereum:web3@1.0.0-beta.33
+won:blocks@1.1.0
+won:accounts@1.1.0
+won:tools@1.1.0
+won:elements@1.1.0
+won:web3@1.0.0-beta.33
 3stack:bignumber

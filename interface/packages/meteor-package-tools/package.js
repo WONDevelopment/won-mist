@@ -1,5 +1,5 @@
 Package.describe({
-  name: "ethereum:tools",
+  name: "won:tools",
   summary: "Helper functions for dapps",
   version: "1.1.0",
   git: "http://github.com/ethereum/meteor-package-tools"
@@ -18,7 +18,7 @@ Package.onUse(function(api) {
   //api.use('numeral:numeral@1.5.3', ['client', 'server']);
   api.use("3stack:bignumber@2.0.0", "client");
 
-  api.use("ethereum:web3@1.0.0-beta.33", ["client", "server"]);
+  api.use("won:web3@1.0.0-beta.33", ["client", "server"]);
   api.use("frozeman:persistent-minimongo@0.1.8", "client");
   api.use("frozeman:storage@0.1.8", "client");
 
@@ -32,6 +32,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use("tinytest");
-  api.use("ethereum:tools");
+  api.use("won:tools");
   api.addFiles("ethtools-tests.js", ["client", "server"]);
 });

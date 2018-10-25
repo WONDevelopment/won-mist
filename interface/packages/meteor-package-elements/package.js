@@ -1,5 +1,5 @@
 Package.describe({
-  name: "ethereum:elements",
+  name: "won:elements",
   summary: "Basic elements for Dapps",
   version: "1.2.0",
   git: "http://github.com/ethereum/meteor-package-elements"
@@ -18,14 +18,14 @@ Package.onUse(function(api) {
   api.use("3stack:bignumber@2.0.0", "client");
   // api.use('underscorestring:underscore.string@3.1.1', 'client');
 
-  api.use("ethereum:web3@1.0.0-beta.33", "client");
-  api.use("ethereum:tools@1.0.0", "client");
+  api.use("won:web3@1.0.0-beta.33", "client");
+  api.use("won:tools@1.0.0", "client");
   api.use("frozeman:animation-helper@0.2.5", "client");
   api.use("frozeman:storage@0.1.8", "client");
   api.use("frozeman:template-var@1.2.2", "client");
 
   // provide packages for the app developer as well
-  api.imply(["frozeman:template-var", "ethereum:tools"], "client");
+  api.imply(["frozeman:template-var", "won:tools"], "client");
 
   api.export(["EthElements"], "client");
 

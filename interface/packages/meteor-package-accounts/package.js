@@ -1,5 +1,5 @@
 Package.describe({
-  name: "ethereum:accounts",
+  name: "won:accounts",
   summary:
     "Provides and updates the ethereum accounts in the Accounts collection",
   version: "1.1.0",
@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   api.use("mongo", ["client", "server"]);
 
   api.use("frozeman:persistent-minimongo@0.1.8", "client");
-  api.use("ethereum:web3@1.0.0-beta.33", ["client", "server"]);
+  api.use("won:web3@1.0.0-beta.33", ["client", "server"]);
 
   api.export(["EthAccounts"], ["client", "server"]);
 
