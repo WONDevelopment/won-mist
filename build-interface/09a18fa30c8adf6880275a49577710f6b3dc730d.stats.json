@@ -3,8 +3,8 @@
     "name": "standard-minifier-js",
     "version": "2.3.4"
   },
-  "totalMinifiedBytes": 2290000,
-  "totalMinifiedGzipBytes": 621333,
+  "totalMinifiedBytes": 2297337,
+  "totalMinifiedGzipBytes": 622412,
   "minifiedBytesByPackage": {
     "packages/meteor.js": 9433,
     "packages/less.js": 24,
@@ -14,14 +14,14 @@
     "packages/meteorspark_util.js": 495,
     "packages/modules-runtime.js": 4087,
     "packages/modules.js": [
-      214150,
+      214130,
       {
         "node_modules": {
           "meteor": {
             "modules": {
               "client.js": 124,
               "css.js": 261,
-              "install-packages.js": 2691,
+              "install-packages.js": 2671,
               "process.js": 347,
               "reify.js": 71,
               "stubs.js": 97,
@@ -660,15 +660,15 @@
     "packages/mrt_jquery-ui-sortable.js": 37425,
     "packages/amplify.js": 8705,
     "packages/frozeman_persistent-minimongo.js": 2028,
-    "packages/ethereum_web3.js": 609372,
-    "packages/ethereum_accounts.js": 2832,
+    "packages/won_web3.js": 610227,
+    "packages/won_accounts.js": 2825,
     "packages/3stack_bignumber.js": 14969,
-    "packages/ethereum_tools.js": 4144,
+    "packages/won_tools.js": 4139,
     "packages/standard-minifiers.js": 38,
     "packages/alexvandesande_identicon.js": 1493,
     "packages/standard-minifier-css.js": 41,
     "packages/standard-minifier-js.js": 40,
-    "packages/ethereum_elements.js": 159624,
+    "packages/won_elements.js": 159837,
     "packages/ethereum_dapp-styles.js": 40,
     "packages/meteor-base.js": 31,
     "packages/mobile-experience.js": 37,
@@ -811,9 +811,9 @@
         }
       }
     ],
-    "app/global-imports.js": 1705,
+    "app/global-imports.js": 1690,
     "app/app.js": [
-      373743,
+      380059,
       {
         "client": {
           "templates": {
@@ -836,13 +836,15 @@
               "template.generic.js": 164,
               "template.importAccount.js": 2939,
               "template.loadingWindow.js": 287,
-              "template.sendTransactionConfirmation.js": 17835,
+              "template.openExternalWallet.js": 5190,
+              "template.sendTransactionConfirmation.js": 17539,
               "template.updateAvailable.js": 3310,
               "clientUpdateAvailable.js": 222,
               "connectAccount.js": 2216,
               "generic.js": 70,
               "importAccount.js": 2246,
-              "sendTransactionConfirmation.js": 8953,
+              "openExternalWallet.js": 1319,
+              "sendTransactionConfirmation.js": 8961,
               "updateAvailable.js": 577
             },
             "views": {
@@ -858,7 +860,7 @@
               "1_web3js_init.js": 109
             },
             "helpers": {
-              "helperFunctions.js": 2881,
+              "helperFunctions.js": 2563,
               "templateHelpers.js": 1334
             },
             "signatures.js": 262801,
@@ -871,7 +873,7 @@
           "windowEvents.js": 980
         },
         "components": {
-          "About.js": 927,
+          "About.js": 977,
           "NodeInfo.js": 6488,
           "RequestAccount.js": 2850
         },
@@ -894,7 +896,7 @@
           "app.zh.i18n.json": 110,
           "mist.ca.i18n.json": 111,
           "mist.de.i18n.json": 110,
-          "mist.en.i18n.json": 9693,
+          "mist.en.i18n.json": 9860,
           "mist.es.i18n.json": 120,
           "mist.fa.i18n.json": 114,
           "mist.fr.i18n.json": 121,
