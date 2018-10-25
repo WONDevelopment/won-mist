@@ -489,7 +489,7 @@ class EthereumNode extends EventEmitter {
       let wsArgs = [
           "--ws",
           "--wsport", "29546",
-          "--wsorigins", "http://localhost:3000",
+          "--wsorigins", Settings.inProductionMode ? 'file://' : 'http://localhost:3000',
           "--wsapi", "personal"
       ];
       args = args.concat(wsArgs);
