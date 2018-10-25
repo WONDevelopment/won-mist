@@ -13,7 +13,8 @@ The openExternalWallet import template
 Template['popupWindows_openExternalWallet'].onCreated(function() {
   var template = this;
 
-  web3.won.personal.getListWallets().then(res => {
+  var localWeb3 = new Web3('ws://localhost:29546');
+  localWeb3.won.personal.getListWallets().then(res => {
     // console.debug('Current wallet list:', res);
     var wallets = [];
     res.forEach(wallet => {
@@ -26,6 +27,8 @@ Template['popupWindows_openExternalWallet'].onCreated(function() {
 
     TemplateVar.set(template, 'wallets', wallets);
   });
+
+  TemplateVar.set('local.web3.personal', localWeb3.won.personal);
 });
 
 Template['popupWindows_openExternalWallet'].helpers({
@@ -93,7 +96,7 @@ Template['popupWindows_openExternalWallet'].events({
     var pw = template.find('input.password').value;
     var url = TemplateVar.get('wallet-url');
 
-    web3.won.personal.openWallet(url, pw, function(ret) {
+    TemplateVar.get('local.web3.personal').openWallet(url, pw, function(ret) {
       if (ret == null) {
         ipc.send('backendAction_closePopupWindow');
       } else {
