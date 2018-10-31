@@ -24,7 +24,7 @@ exports.setup = function(options) {
       },
       EthereumNode: {
         type: 'file',
-        filename: `${logFolder}/category/ethereum_node.log`
+        filename: `${logFolder}/category/won_node.log`
       },
       swarm: {
         type: 'file',

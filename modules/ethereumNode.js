@@ -430,7 +430,7 @@ class EthereumNode extends EventEmitter {
           Settings.userDataPath,
           'logs',
           'category',
-          'ethereum_node.log'
+          'won_node.log'
         ),
         { count: 5 },
         error => {
