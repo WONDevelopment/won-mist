@@ -1,6 +1,6 @@
 {
   "name": "WonMist",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "GPL-3.0",
   "author": "Won Mist Team <won-mist@worldopennetwork.net>",
   "description": "Won Mist",
@@ -20,7 +20,7 @@
     "build:wallet": "gulp --wallet",
     "build:mist": "gulp --mist",
     "build:interface": "cd interface && meteor-build-client ../build-interface -p ''",
-    "build:dapp":"cd meteor-dapp-wallet && sh build.sh && cd ../ && yarn",
+    "build:dapp": "cd meteor-dapp-wallet && sh build.sh && cd ../ && yarn",
     "dist:mist": "gulp upload-queue --mist",
     "dist:wallet": "gulp upload-queue --wallet",
     "task": "gulp"
