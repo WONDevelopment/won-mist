@@ -350,7 +350,7 @@ const argv = require('yargs')
     node: {
       demand: false,
       default: null,
-      describe: 'Node to use: geth, eth',
+      describe: 'Node to use: gwon, won',
       requiresArg: true,
       nargs: 1,
       type: 'string',
@@ -393,7 +393,7 @@ const argv = require('yargs')
     },
     gethpath: {
       demand: false,
-      describe: 'Path to Geth executable to use instead of default.',
+      describe: 'Path to Gwon executable to use instead of default.',
       requiresArg: true,
       nargs: 1,
       type: 'string',
@@ -436,7 +436,7 @@ const argv = require('yargs')
     syncmode: {
       demand: false,
       requiresArg: true,
-      describe: 'Geth synchronization mode: [fast|light|full|nosync]',
+      describe: 'Gwon synchronization mode: [fast|light|full|nosync]',
       nargs: 1,
       type: 'string',
       group: 'Mist options:'
@@ -461,7 +461,7 @@ const argv = require('yargs')
     },
     '': {
       describe:
-        'To pass options to the underlying node (e.g. Geth) use the --node- prefix, e.g. --node-datadir',
+        'To pass options to the underlying node (e.g. Gwon) use the --node- prefix, e.g. --node-datadir',
       group: 'Node options:'
     }
   })

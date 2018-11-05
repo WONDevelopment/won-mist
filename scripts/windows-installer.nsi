@@ -26,7 +26,7 @@ CRCCheck on
 RequestExecutionLevel admin
 
 !searchreplace APPNAMENOHYPEN ${APPNAME} "-" " "
-!define GROUPNAME "Won"
+!define GROUPNAME "WorldOpenNetwork"
 !define HELPURL "https://github.com/WONDevelopment/won-mist/releases/issues"
 !define UPDATEURL "https://github.com/WONDevelopment/won-mist/releases"
 !define ABOUTURL "https://worldopennetwork.net"
