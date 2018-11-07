@@ -152,7 +152,15 @@ Template['elements_executeContract_constant'].onCreated(function() {
         var outputs = [];
         // single return value
         if (template.data.outputs.length === 1) {
-          template.data.outputs[0].value = r;
+          if (
+            template.data.name === 'name' ||
+            template.data.name === 'symbol'
+          ) {
+            template.data.outputs[0].value =
+              r.length > 64 ? web3.utils.toUtf8(r) : r;
+          } else {
+            template.data.outputs[0].value = r;
+          }
           outputs.push(template.data.outputs[0]);
 
           // multiple return values
