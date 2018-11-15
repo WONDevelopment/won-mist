@@ -109,7 +109,7 @@
       "buttons": {
         "deposit": "Déposer de l'won",
         "buyEther": "Acheter Won",
-        "viewOnExplorer": "View on Etherscan",
+        "viewOnExplorer": "View on Wonscan",
         "copyAddress": "Copier l'adresse",
         "scanQRCode": "Afficher le QR Code",
         "showInterface": "Afficher l'interface"

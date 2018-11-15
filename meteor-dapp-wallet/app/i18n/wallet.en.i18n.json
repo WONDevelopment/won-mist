@@ -120,7 +120,7 @@
       "buttons": {
         "deposit": "Transfer Won & Tokens",
         "buyEther": "Buy won",
-        "viewOnExplorer": "View on Etherscan",
+        "viewOnExplorer": "View on Wonscan",
         "copyAddress": "Copy address",
         "scanQRCode": "Show QR-Code",
         "showInterface": "Show Interface"

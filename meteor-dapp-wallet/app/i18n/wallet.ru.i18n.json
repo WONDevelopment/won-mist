@@ -110,7 +110,7 @@
       "buttons": {
         "deposit": "Пополнить Эфиром",
         "buyEther": "Пополнить используя Биткоин",
-        "viewOnExplorer": "View on Etherscan",
+        "viewOnExplorer": "View on Wonscan",
         "copyAddress": "Копировать адрес",
         "scanQRCode": "Показать QR-Код",
         "showInterface": "Показать Интерфейс"
