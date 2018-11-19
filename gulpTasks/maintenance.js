@@ -12,13 +12,13 @@ const parseJson = require('xml2js').parseString;
 const clientBinaries = require('../clientBinaries.json');
 
 gulp.task('update-nodes', cb => {
-  const clientBinariesGeth = clientBinaries.clients.Geth;
-  const localGethVersion = clientBinariesGeth.version;
+  const clientBinariesGwon = clientBinaries.clients.Gwon;
+  const localGwonVersion = clientBinariesGwon.version;
   const newJson = clientBinaries;
-  const geth = newJson.clients.Geth;
+  const gwon = newJson.clients.Gwon;
 
-  // Query latest geth version
-  got('https://api.github.com/repos/ethereum/go-ethereum/releases/latest', {
+  // Query latest gwon version
+  got('https://api.github.com/repos/WONDevelopment/go-won/releases/latest', {
     json: true
   })
     .then(response => {
@@ -29,12 +29,12 @@ gulp.task('update-nodes', cb => {
       const latestGethVersion = tagName.match(/\d+\.\d+\.\d+/)[0];
 
       // Compare to current geth version in clientBinaries.json
-      if (cmp(latestGethVersion, localGethVersion)) {
-        geth.version = latestGethVersion;
+      if (cmp(latestGethVersion, localGwonVersion)) {
+        gwon.version = latestGethVersion;
 
         // Query commit hash (first 8 characters)
         got(
-          `https://api.github.com/repos/ethereum/go-ethereum/commits/${tagName}`,
+          `https://api.github.com/repos/WONDevelopment/go-won/commits/${tagName}`,
           { json: true }
         )
           .then(response => {
@@ -45,8 +45,8 @@ gulp.task('update-nodes', cb => {
 
             // Query Azure assets for md5 hashes
             got(
-              'https://gethstore.blob.core.windows.net/builds?restype=container&comp=list',
-              { xml: true }
+              'https://raw.githubusercontent.com/WONDevelopment/won-mist/master/clientBinaries.json',
+              { json: true }
             )
               .then(response => {
                 parseJson(response.body, (err, data) => {
@@ -57,26 +57,26 @@ gulp.task('update-nodes', cb => {
                 });
 
                 // For each platform/arch in clientBinaries.json
-                _.keys(geth.platforms).forEach(platform => {
-                  _.keys(geth.platforms[platform]).forEach(arch => {
+                _.keys(gwon.platforms).forEach(platform => {
+                  _.keys(gwon.platforms[platform]).forEach(arch => {
                     // Update URL
-                    let url = geth.platforms[platform][arch].download.url;
+                    let url = gwon.platforms[platform][arch].download.url;
                     url = url.replace(
                       /\d+\.\d+\.\d+-[a-z0-9]{8}/,
                       `${latestGethVersion}-${hash}`
                     );
-                    geth.platforms[platform][arch].download.url = url;
+                    gwon.platforms[platform][arch].download.url = url;
 
                     // Update bin name (path in archive)
-                    let bin = geth.platforms[platform][arch].download.bin;
+                    let bin = gwon.platforms[platform][arch].download.bin;
                     bin = bin.replace(
                       /\d+\.\d+\.\d+-[a-z0-9]{8}/,
                       `${latestGethVersion}-${hash}`
                     );
-                    geth.platforms[platform][arch].download.bin = bin;
+                    gwon.platforms[platform][arch].download.bin = bin;
 
                     // Update expected sanity-command version output
-                    geth.platforms[platform][
+                    gwon.platforms[platform][
                       arch
                     ].commands.sanity.output[1] = String(latestGethVersion);
 
@@ -85,7 +85,7 @@ gulp.task('update-nodes', cb => {
                       if (
                         String(blob.Name) ===
                         _.last(
-                          geth.platforms[platform][arch].download.url.split('/')
+                          gwon.platforms[platform][arch].download.url.split('/')
                         )
                       ) {
                         const sum = Buffer.from(
@@ -93,7 +93,7 @@ gulp.task('update-nodes', cb => {
                           'base64'
                         );
 
-                        geth.platforms[platform][
+                        gwon.platforms[platform][
                           arch
                         ].download.md5 = sum.toString('hex');
                       }
