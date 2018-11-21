@@ -5,6 +5,8 @@ const log = require('./utils/logger').create('updateChecker');
 const got = require('got');
 const semver = require('semver');
 
+const APP_URL =
+  'https://api.github.com/repos/WONDevelopment/won-mist/releases/latest';
 /**
  * Check for updates to the app.
  * @return {[type]} [description]
@@ -25,7 +27,7 @@ const check = (exports.check = () => {
       break;
   }
 
-  return got('https://api.github.com/repos/WONDevelopment/won-mist/releases/latest', {
+  return got(APP_URL, {
     timeout: 30000,
     json: true
   })

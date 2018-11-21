@@ -15,7 +15,7 @@ const log = require('./utils/logger').create('ClientBinaryManager');
 const BINARY_URL =
   'https://raw.githubusercontent.com/WONDevelopment/won-mist/master/clientBinaries.json';
 
-const ALLOWED_DOWNLOAD_URLS_REGEX = '';///^https:\/\/(?:(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)?worldopennetwork\.net\/|github\.com\/WONDevelopment\/go-won\/)(?:.+)/; // eslint-disable-line max-len
+const ALLOWED_DOWNLOAD_URLS_REGEX = ''; ///^https:\/\/(?:(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)?worldopennetwork\.net\/|github\.com\/WONDevelopment\/go-won\/)(?:.+)/; // eslint-disable-line max-len
 
 class Manager extends EventEmitter {
   constructor() {
@@ -24,13 +24,13 @@ class Manager extends EventEmitter {
     this._availableClients = {};
   }
 
-  init(restart) {
+  init() {
     log.info('Initializing...');
 
     // check every hour
     setInterval(() => this._checkForNewConfig(true), 1000 * 60 * 60);
 
-    return this._checkForNewConfig(restart);
+    return this._checkForNewConfig(true);
   }
 
   getClient(clientId) {
@@ -138,6 +138,7 @@ class Manager extends EventEmitter {
         if (
           latestConfig &&
           JSON.stringify(localConfig) !== JSON.stringify(latestConfig) &&
+          nodeVersion !== localConfig.clients[nodeType].version &&
           nodeVersion !== skipedVersion
         ) {
           return new Q(resolve => {

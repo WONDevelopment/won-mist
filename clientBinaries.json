@@ -7,10 +7,10 @@
           "x64": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-linux-amd64-1.8.5-b228f9e4.tar.gz",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-linux-amd64-1.8.5-467f9c46.tar.gz",
               "type": "tar",
-              "md5": "62acb4519d5db12cc0677b1ceb016029",
-              "bin": "gwon-linux-amd64-1.8.5-b228f9e4/gwon"
+              "md5": "9f6bbb712433eb4049783ebef62c73b2",
+              "bin": "gwon-linux-amd64-1.8.5-467f9c46/gwon"
             },
             "bin": "gwon",
             "commands": {
@@ -23,10 +23,10 @@
           "ia32": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-linux-386-1.8.5-b228f9e4.tar.gz",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-linux-386-1.8.5-467f9c46.tar.gz",
               "type": "tar",
-              "md5": "1a24268ebb14dbd3927ae889d84b1ac9",
-              "bin": "gwon-linux-386-1.8.5-b228f9e4/gwon"
+              "md5": "2e7ed439cf364d84995f968b7fdfc54a",
+              "bin": "gwon-linux-386-1.8.5-467f9c46/gwon"
             },
             "bin": "gwon",
             "commands": {
