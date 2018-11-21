@@ -81,4 +81,4 @@ deploy:
   draft: true
   on:
     repo: WONDevelopment/won-mist
-    tags: false
+#    tags: false
