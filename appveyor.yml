@@ -58,13 +58,14 @@ build_script:
 #- cmd: yarn test:unit:once
 
 deploy:
-  release: Wonmist-draft
+  release: $(APPVEYOR_REPO_TAG_NAME)
+  name: Wonmist-draft
   description: "Release description"
   provider: GitHub
   auth_token:
     secure: /BB54uB3GO7jFxySEZkXlFnHO0RpAJwLMWiyYW/6+zTF/52wzyB1OZjki38YZrTN    # your encrypted token from GitHub
   artifact: /.*\.exe/
-  draft: false
+  draft: true
   prerelease: false
 #  tag: $(APPVEYOR_REPO_TAG_NAME)
   on:

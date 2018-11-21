@@ -70,6 +70,7 @@ after_success:
 deploy:
   provider: releases
   name: Wonmist-draft
+  tag_name: $TRAVIS_TAG
   api_key:
     secure: LBwVPcWIVbE41oVhtsbYMIdTxFyGI+9dlqulMY3JP1tJ22BpwPUc8zm+Btat4i3YI+nUW1E35icndem2WAbX8GaCwaVUmHOmfejQqMOPiqSmhnVVhk5bqksLFuJDH8lNo1ebkeNNnwMASa5diZhmS6TL0q41P7s0wshZ8DNa4q96ihMb7Kw6YpAnE08rmeTFLdd00GpS+r5iRg+01opmGjU7tNJSajwkwjX95Jcg9u12W7HbBgdrueYtd3qhniVQ+B4ZDfjQ1xkvbw53k9VdPoIaQyQtA4vyj6nCrnU4pqJmZ6j6enlo9xaLWeDT9jmYSBcZdCRz1q0735x/D0A7Qrj0C/klA0yWoJlYludxIbJyxdiL6kh2+o+zjYCAaRynz8xBB+ba9waNvU9Y6JAyhWvOe8EItZiN6wAyuNGmH0Wk68Om9rKSfStmgORfPVrUEZWCy8zDBVa2AoSDiMydmtTTrMni9zHo76uCEPHRwut/Wq8KT+9jUs6EgAr9ePtDj1iMukFBI88oHXzVa2R0yzic7ulI5BOrmL32namzzTVUP+SRdPIdAbGIXxdvA1LBiiyUH7FEpNrbId4IIbqrz4weG2OyzdmknrWGk5L/UOttVJN7032j+DlvlwJnbej1t0bN7sslZD6WEyVAU63nBbQ3GZYXF7Y2y3SqpLW9fvk=
   file_glob: true
@@ -77,6 +78,7 @@ deploy:
   - 'dist_wallet/release/*'
   - 'dist_mist/release/*'
   skip_cleanup: true
+  draft: true
   on:
     repo: WONDevelopment/won-mist
     tags: false
