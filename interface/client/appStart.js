@@ -41,7 +41,7 @@ function initTabs() {
     );
 
     if (!Tabs.findOne('browser')) {
-      const url = 'https://www.stateofthedapps.com';
+      const url = 'https://explorer.1won.com/home';
       Tabs.insert({
         _id: 'browser',
         url,
