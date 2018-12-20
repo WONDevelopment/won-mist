@@ -168,8 +168,8 @@ EthTools.formatNumber = function(number, format) {
           groupSize: 3
         }
       : {
-          decimalSeparator: ",",
-          groupSeparator: " ",
+          decimalSeparator: ".",
+          groupSeparator: ",",
           groupSize: 3
         };
   BigNumber.config({ FORMAT: options });
