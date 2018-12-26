@@ -34,7 +34,7 @@
         "blockReceived": "收到新的區塊",
         "timeSinceBlock": "自從上一個區塊",
         "peers": "節點",
-        "testnetExplain": "您正在 testnet，請勿發送任何真實的以太幣到這些位址",
+        "testnetExplain": "您正在 testnet，請勿發送任何真實的WON幣到這些位址",
         "noAccounts": {
           "title": "您還未有任何帳戶",
           "text": "您需要創造至少一個帳戶，記得用夠強的密碼。"
@@ -108,7 +108,7 @@
       "buttons": {
         "deposit": "存入 Won",
         "depositBitcoin": "使用 Bitcoin 做存款",
-        "viewOnExplorer": "View on Wonscan",
+        "viewOnExplorer": "View on Explorer",
         "copyAddress": "複製位址",
         "scanQRCode": "顯示二維條碼",
         "showInterface": "顯示界面"

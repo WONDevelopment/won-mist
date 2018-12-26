@@ -118,7 +118,7 @@
       "buttons": {
         "deposit": "Transfer Won & Tokens",
         "buyEther": "Fund with Bitcoin",
-        "viewOnExplorer": "View on Wonscan",
+        "viewOnExplorer": "View on Explorer",
         "copyAddress": "Copy address",
         "scanQRCode": "Show QR-Code",
         "showInterface": "Show Interface"

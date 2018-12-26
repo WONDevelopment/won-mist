@@ -109,7 +109,7 @@
       "privateNetwork": "Private-net",
       "test": "test",
       "testnetExplain":
-        "你正处于Testnet测试网络中，请勿发送真正的以太币到这些地址中",
+        "你正处于Testnet测试网络中，请勿发送真正的WON币到这些地址中",
       "timeSinceBlock": "自上一块已经过去的时间"
     },
     "sidebar": {
@@ -236,9 +236,9 @@
       },
       "openExternalWallet": {
         "selectAWallet": "选择一个钱包",
-        "noExternalWallet":"找不到钱包.",
-        "openTheWallet":"打开钱包",
-        "enterPIN":"请输入当前的PIN码",
+        "noExternalWallet": "找不到钱包.",
+        "openTheWallet": "打开钱包",
+        "enterPIN": "请输入当前的PIN码",
         "lookNumberPosition": "查看设备的数字位置："
       },
       "connectAccount": {

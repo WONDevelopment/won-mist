@@ -108,7 +108,7 @@
       "privateNetwork": "Private-net",
       "test": "test",
       "testnetExplain":
-        "您正處於Testnet測試網路中，請勿發送真正的以太幣到這些地址中",
+        "您正處於Testnet測試網路中，請勿發送真正的WON幣到這些地址中",
       "timeSinceBlock": "自上一區塊已經過去的時間"
     },
     "sidebar": {
@@ -235,9 +235,9 @@
       },
       "openExternalWallet": {
         "selectAWallet": "選擇一個錢包",
-        "noExternalWallet":" 找不到錢包.",
-        "openTheWallet":"打開錢包",
-        "enterPIN":"請輸入當前的PIN碼",
+        "noExternalWallet": " 找不到錢包.",
+        "openTheWallet": "打開錢包",
+        "enterPIN": "請輸入當前的PIN碼",
         "lookNumberPosition": "查看設備的數字位置："
       },
       "connectAccount": {
