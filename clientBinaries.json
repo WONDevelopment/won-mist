@@ -1,22 +1,22 @@
 {
   "clients": {
     "Gwon": {
-      "version": "1.8.5",
+      "version": "1.8.6",
       "platforms": {
         "linux": {
           "x64": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5-ci/gwon-linux-amd64-1.8.5-467f9c46.tar.gz",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.6/gwon-linux-amd64-1.8.6-cea53529.tar.gz",
               "type": "tar",
-              "md5": "9f6bbb712433eb4049783ebef62c73b2",
-              "bin": "gwon-linux-amd64-1.8.5-467f9c46/gwon"
+              "md5": "b9ee82880126df5aa3b4d9000c25a16b",
+              "bin": "gwon-linux-amd64-1.8.6-cea53529/gwon"
             },
             "bin": "gwon",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.5"]
+                "output": ["Gwon", "1.8.6"]
               }
             }
           },
@@ -41,16 +41,16 @@
           "x64": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-darwin-amd64-1.8.5-b228f9e4.tar.gz",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.6/gwon-darwin-amd64-1.8.6-cea53529.tar.gz",
               "type": "tar",
-              "md5": "05073316af40df51d8417f378556560a",
-              "bin": "gwon-darwin-amd64-1.8.5-b228f9e4/gwon"
+              "md5": "b86ced431718a3ff64f083a075f7b72a",
+              "bin": "gwon-darwin-amd64-1.8.6-cea53529/gwon"
             },
             "bin": "gwon",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.5"]
+                "output": ["Gwon", "1.8.6"]
               }
             }
           }
@@ -59,32 +59,32 @@
           "x64": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-windows-amd64-1.8.5-b228f9e4.zip",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.6/gwon-windows-amd64-1.8.6-cea53529.zip",
               "type": "zip",
-              "md5": "831d9a9e05bc97676cb0450fb244aeee",
-              "bin": "gwon-windows-amd64-1.8.5-b228f9e4\\gwon.exe"
+              "md5": "2eb5ed3e2e81dc9a26b8898c7f32c95b",
+              "bin": "gwon-windows-amd64-1.8.6-cea53529\\gwon.exe"
             },
             "bin": "gwon.exe",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.5"]
+                "output": ["Gwon", "1.8.6"]
               }
             }
           },
           "ia32": {
             "download": {
               "url":
-                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.5/gwon-windows-386-1.8.5-b228f9e4.zip",
+                "https://github.com/WONDevelopment/go-won/releases/download/v1.8.6/gwon-windows-386-1.8.6-cea53529.zip",
               "type": "zip",
-              "md5": "2f7bf5cc9ab86c7d47e58b2546dda26b",
-              "bin": "gwon-windows-386-1.8.5-05cf3f1c\\gwon.exe"
+              "md5": "106c9e3ebabbbcd4d7c1f58c8caaf4e1",
+              "bin": "gwon-windows-386-1.8.6-cea53529\\gwon.exe"
             },
             "bin": "gwon.exe",
             "commands": {
               "sanity": {
                 "args": ["version"],
-                "output": ["Gwon", "1.8.5"]
+                "output": ["Gwon", "1.8.6"]
               }
             }
           }
