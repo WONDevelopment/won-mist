@@ -850,8 +850,8 @@ Template['views_send'].events({
 
         // LET MIST HANDLE the CONFIRMATION
       } else {
-        // sendTransaction(sendAll ? estimatedGas : estimatedGas + 100000);
-        sendTransaction(estimatedGas);
+        sendTransaction(sendAll ? estimatedGas : estimatedGas + 1000); // increase the provided gas by 1k
+        // sendTransaction(estimatedGas);
       }
     }
   }
