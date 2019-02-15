@@ -10,7 +10,7 @@ EthTools.ticker.start = function(options) {
     options.currencies = ["BTC", "USD", "EUR"];
   }
   var url =
-    "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=" +
+    "https://api.1won.com/data/price?fsym=WON&tsyms=" +
     options.currencies.join(",");
   if (options.extraParams) {
     url += "&extraParams=" + options.extraParams;
@@ -37,7 +37,7 @@ EthTools.ticker.start = function(options) {
       }
     } else {
       console.warn(
-        "Can not connect to https://mini-api.cryptocompare.com to get price ticker data, please check your internet connection."
+        "Can not connect to https://api.1won.com to get price ticker data, please check your internet connection."
       );
     }
   };
@@ -46,7 +46,7 @@ EthTools.ticker.start = function(options) {
   HTTP.get(url, updatePrice);
 
   // update prices
-  Meteor.setInterval(function() {
-    HTTP.get(url, updatePrice);
-  }, 1000 * 30);
+  // Meteor.setInterval(function() {
+  //   HTTP.get(url, updatePrice);
+  // }, 1000 * 30);
 };

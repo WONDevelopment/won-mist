@@ -539,7 +539,7 @@ observeTransactions = function() {
           !newDocument.exchangeRates.brl)
       ) {
         var url =
-          'https://min-api.cryptocompare.com/data/pricehistorical?fsym=ETH&tsyms=BTC,USD,EUR,GBP,BRL&ts=' +
+          'https://api.1won.com/data/pricehistorical?fsym=ETH&tsyms=BTC,USD&ts=' +
           newDocument.timestamp;
 
         if (typeof mist !== 'undefined')
@@ -565,7 +565,7 @@ observeTransactions = function() {
             }
           } else {
             console.warn(
-              'Cannot connect to https://min-api.cryptocompare.com/ to get price ticker data, please check your internet connection.'
+              'Cannot connect to https://api.1won.com/ to get price ticker data, please check your internet connection.'
             );
           }
         });
