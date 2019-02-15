@@ -141,7 +141,7 @@
         "buttons": {
           "deposit": "Won hinterlegen",
           "buyEther": "Kaufe Won",
-          "viewOnExplorer": "View on Wonscan",
+          "viewOnExplorer": "View on Explorer",
           "copyAddress": "Adresse kopieren",
           "scanQRCode": "QR-Code anzeigen",
           "showInterface": "Interface anzeigen"

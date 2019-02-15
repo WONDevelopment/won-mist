@@ -137,7 +137,7 @@
         "buttons": {
           "deposit": "Пополнить Эфиром",
           "buyEther": "Пополнить используя Биткоин",
-          "viewOnExplorer": "View on Wonscan",
+          "viewOnExplorer": "View on Explorer",
           "copyAddress": "Копировать адрес",
           "scanQRCode": "Показать QR-Код",
           "showInterface": "Показать Интерфейс"

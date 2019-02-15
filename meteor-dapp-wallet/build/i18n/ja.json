@@ -133,7 +133,7 @@
         "buttons": {
           "deposit": "Etherをデポジット",
           "buyEther": "Bitcoinを使ってデポジット",
-          "viewOnExplorer": "View on Wonscan",
+          "viewOnExplorer": "View on Explorer",
           "copyAddress": "アドレスをコピー",
           "scanQRCode": "QRコードを表示",
           "showInterface": "インターフェイスを表示"
