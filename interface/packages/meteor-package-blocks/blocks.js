@@ -128,6 +128,17 @@ function observeLatestBlocks() {
   subscription = web3.won.subscribe("newBlockHeaders", function(error, result) {
     checkLatestBlocks(error, result ? result.hash : null);
   });
+
+  setInterval(() => {
+    if (subscription) {
+      subscription.unsubscribe();
+    }
+
+    // GET the latest blockchain information
+    subscription = web3.won.subscribe("newBlockHeaders", function(error, result) {
+      checkLatestBlocks(error, result ? result.hash : null);
+    });
+  }, 1000 * 60 * 1);
 }
 
 /**

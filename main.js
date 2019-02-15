@@ -203,6 +203,11 @@ function onReady() {
   appMenu();
 
   startMainWindow();
+
+  setInterval(() => {
+    log.info('Restart websocket connection.');
+    ethereumNodeRemote.ws.close();
+  }, 1000 * 60 * 3);
 }
 
 function enableSwarmProtocol() {
@@ -307,7 +312,9 @@ function checkForLegacyChain() {
         detail: global.i18n.t('mist.errors.legacyChain.description')
       },
       () => {
-        shell.openExternal('https://github.com/WONDevelopment/won-mist/releases');
+        shell.openExternal(
+          'https://github.com/WONDevelopment/won-mist/releases'
+        );
         store.dispatch(quitApp());
       }
     );
