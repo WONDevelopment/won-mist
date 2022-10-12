@@ -75,7 +75,7 @@
     "del": "^3.0.0",
     "ecstatic": "^4.1.2",
     "electron": "1.8.4",
-    "electron-builder": "^20.17.2",
+    "electron-builder": "^20.44.4",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.12.0",
